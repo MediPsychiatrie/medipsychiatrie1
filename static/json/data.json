@@ -1,0 +1,1895 @@
+{
+    "version": "v2.0",
+    "data": [
+      {
+        "title": "Psychiatrie et Troubles Mentaux",
+        "paragraphs": [
+          {
+            "context": "La psychiatrie est la branche de la médecine qui s'occupe des troubles mentaux. Elle joue un rôle crucial dans le maintien de la santé mentale et le bien-être des individus. Voici une présentation détaillée des aspects fondamentaux de la psychiatrie...",
+            "qas": [
+              {
+                "id": "1",
+                "question": "Qui est souvent considéré comme un pionnier de la psychiatrie pour avoir libéré les patients de leurs chaînes et introduit des traitements plus compassionnels?",
+                "answers": [
+                  {
+                    "text": "Philippe Pinel"
+                  }
+                ],
+                "is_impossible": false
+              },
+              {
+                "id": "2",
+                "question": "Quel manuel est souvent utilisé pour établir des diagnostics précis en psychiatrie?",
+                "answers": [
+                    {
+                        "text": "DSM-5 (Manuel diagnostique et statistique des troubles mentaux)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "3",
+                "question": "Quelle approche thérapeutique vise à modifier les pensées et comportements dysfonctionnels?",
+                "answers": [
+                    {
+                        "text": "Thérapie Cognitivo-Comportementale (TCC)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "4",
+                "question": "Quelle technique est utilisée pour traiter la dépression sévère résistante aux traitements?",
+                "answers": [
+                    {
+                        "text": "Électroconvulsivothérapie (ECT)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "5",
+                "question": "Quelle est la méthode non invasive utilisée pour traiter certains troubles mentaux en stimulant le cerveau?",
+                "answers": [
+                    {
+                        "text": "Stimulation Magnétique Transcrânienne (TMS)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "6",
+                "question": "Quel trouble est caractérisé par une restriction alimentaire sévère et une peur intense de prendre du poids?",
+                "answers": [
+                    {
+                        "text": "Anorexie mentale"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "7",
+                "question": "Quelle est l'approche qui vise à développer des compétences pour la vie quotidienne et professionnelle?",
+                "answers": [
+                    {
+                        "text": "Thérapie occupationnelle"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "8",
+                "question": "Quel type de thérapie explore les conflits inconscients et les expériences passées?",
+                "answers": [
+                    {
+                        "text": "Psychanalyse"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "9",
+                "question": "Quelle approche personnalisée de traitement s'adapte aux caractéristiques individuelles des patients?",
+                "answers": [
+                    {
+                        "text": "Psychiatrie de précision"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "10",
+                "question": "Quelle est la technique utilisée pour observer l'activité cérébrale en lien avec différents troubles mentaux?",
+                "answers": [
+                    {
+                        "text": "Imagerie cérébrale comme l'IRM fonctionnelle (IRMf) et la tomographie par émission de positrons (TEP)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "11",
+                "question": "Quel est l'un des principaux défis éthiques en psychiatrie concernant le consentement aux traitements?",
+                "answers": [
+                    {
+                        "text": "Assurer que les patients comprennent et consentent volontairement aux traitements proposés"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "12",
+                "question": "Quelle est la technique visant à identifier des variations génétiques associées à un risque accru de troubles mentaux?",
+                "answers": [
+                    {
+                        "text": "Études génétiques"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "13",
+                "question": "Quelle est l'approche qui combine des traitements conventionnels avec des thérapies complémentaires comme la méditation et le yoga?",
+                "answers": [
+                    {
+                        "text": "Médecine intégrative"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "14",
+                "question": "Quelle approche de traitement est en cours d'exploration pour traiter les phobies et le stress post-traumatique?",
+                "answers": [
+                    {
+                        "text": "Thérapie par réalité virtuelle"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "15",
+                "question": "Quelle est l'approche qui se concentre sur les interactions sociales et les relations interpersonnelles?",
+                "answers": [
+                    {
+                        "text": "Thérapie Interpersonnelle"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "16",
+                "question": "Quel trouble est caractérisé par des perturbations graves de la pensée, des perceptions et des émotions?",
+                "answers": [
+                    {
+                        "text": "Schizophrénie"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "17",
+                "question": "Quelle est l'approche utilisée pour observer l'activité et les structures cérébrales en lien avec différents troubles?",
+                "answers": [
+                    {
+                        "text": "Techniques d'imagerie cérébrale comme l'IRM fonctionnelle (IRMf) et la tomographie par émission de positrons (TEP)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "18",
+                "question": "Quelle est l'approche visant à adapter les traitements en fonction des caractéristiques individuelles des patients comme le profil génétique?",
+                "answers": [
+                    {
+                        "text": "Psychiatrie de précision"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "19",
+                "question": "Quel est l'outil utilisé pour analyser de grandes quantités de données cliniques en psychiatrie?",
+                "answers": [
+                    {
+                        "text": "Intelligence artificielle (IA)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "20",
+                "question": "Quelle est l'approche qui vise à fournir des soins de santé mentale en dehors des hôpitaux et des cliniques traditionnels?",
+                "answers": [
+                    {
+                        "text": "Psychiatrie communautaire"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "21",
+                "question": "Quel type de troubles mentaux se concentre la psychiatrie de l'enfant et de l'adolescent?",
+                "answers": [
+                    {
+                        "text": "Troubles mentaux qui se manifestent pendant l'enfance et l'adolescence"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+              "id": "22",
+              "question": "Quel est l'un des principaux défis de la psychiatrie malgré les progrès réalisés?",
+              "answers": [
+                  {
+                      "text": "Disparités persistantes dans l'accès aux services de santé mentale"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "23",
+                "question": "Quelle est l'initiative recommandée pour prévenir les troubles mentaux et promouvoir le bien-être psychologique?",
+                "answers": [
+                    {
+                        "text": "Initiatives éducatives, réduction du stress, promotion de styles de vie sains, et accès à des services de santé mentale de qualité"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "24",
+                "question": "Quel est le principal rôle des équipes mobiles de santé mentale en psychiatrie communautaire?",
+                "answers": [
+                    {
+                        "text": "Intervenir directement chez les patients, particulièrement ceux ayant des difficultés à se déplacer ou nécessitant un suivi intensif"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "25",
+                "question": "Quel est l'un des principaux défis éthiques en psychiatrie concernant la confidentialité des informations médicales?",
+                "answers": [
+                    {
+                        "text": "Rigoureusement maintenir la confidentialité tout en permettant un partage approprié des informations en cas de risques sérieux pour le patient ou autrui"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "26",
+                "question": "Quel est le rôle de l'intelligence artificielle (IA) en psychiatrie selon le texte?",
+                "answers": [
+                    {
+                        "text": "Analyser de grandes quantités de données cliniques, identifier des patterns et prédire les réponses aux traitements"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "27",
+                "question": "Quel est l'un des objectifs de la médecine intégrative en psychiatrie?",
+                "answers": [
+                    {
+                        "text": "Combiner des traitements conventionnels avec des thérapies complémentaires comme la méditation, le yoga et la nutrition"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "28",
+                "question": "Quelle est l'approche recommandée pour traiter les phobies et le stress post-traumatique?",
+                "answers": [
+                    {
+                        "text": "Thérapie par réalité virtuelle"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "29",
+                "question": "Quelle est la principale méthode de traitement utilisée pour les troubles anxieux?",
+                "answers": [
+                    {
+                        "text": "Antidépresseurs et anxiolytiques"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "30",
+                "question": "Quelle est l'approche qui se concentre sur les relations et interactions sociales?",
+                "answers": [
+                    {
+                        "text": "Thérapie Interpersonnelle"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "31",
+                "question": "Quel est le principal défi éthique concernant les traitements psychiatriques involontaires?",
+                "answers": [
+                    {
+                        "text": "Débattre des conditions et des justifications de ces traitements tout en cherchant à équilibrer les droits individuels avec la protection de la santé publique"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "32",
+                "question": "Quel est l'un des domaines clés de recherche en psychiatrie selon le texte?",
+                "answers": [
+                    {
+                        "text": "Neurosciences et identification de biomarqueurs biologiques ainsi que de signatures neurologiques associées aux troubles mentaux"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "33",
+                "question": "Quelle est l'approche visant à développer des traitements préventifs basés sur des marqueurs biologiques, génétiques et environnementaux?",
+                "answers": [
+                    {
+                        "text": "Développement d'outils de dépistage précoce et d'interventions préventives"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "34",
+                "question": "Quel est l'un des défis de la psychiatrie mentionné dans le texte malgré les avancées réalisées?",
+                "answers": [
+                    {
+                        "text": "La nécessité d'identifier et d'intervenir précocement dans les troubles mentaux"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "35",
+                "question": "Quel est l'un des objectifs principaux des initiatives de prévention en santé mentale selon le texte?",
+                "answers": [
+                    {
+                        "text": "Réduire les facteurs de risque"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "36",
+                "question": "Quel est l'outil utilisé pour améliorer l'accès aux soins mentaux en offrant des thérapies en ligne et un suivi à distance?",
+                "answers": [
+                    {
+                        "text": "Télémédecine et applications mobiles"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "37",
+                "question": "Quelle approche est recommandée pour développer des programmes de santé mentale adaptés aux besoins culturels spécifiques?",
+                "answers": [
+                    {
+                        "text": "Renforcer les partenariats avec les communautés locales"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "38",
+                "question": "Quel est l'un des rôles des centres de santé mentale communautaires?",
+                "answers": [
+                    {
+                        "text": "Offrir une gamme de services incluant des consultations psychiatriques, des psychothérapies, des groupes de soutien et des activités de réhabilitation"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "39",
+                "question": "Quelle est l'approche qui requiert des interventions spécifiques adaptées aux besoins évolutifs des jeunes patients?",
+                "answers": [
+                    {
+                        "text": "Psychiatrie de l'enfant et de l'adolescent"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "40",
+                "question": "Quelle est l'approche utilisée pour combattre la stigmatisation des personnes atteintes de troubles mentaux?",
+                "answers": [
+                    {
+                        "text": "Éduquer le public sur les troubles mentaux et promouvoir la santé mentale positive"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "41",
+                "question": "Quelle est l'initiative recommandée pour lutter contre les disparités dans l'accès aux services de santé mentale?",
+                "answers": [
+                    {
+                        "text": "Renforcer les systèmes de santé mentale pour répondre à une demande croissante de services"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "42",
+                "question": "Quelle est l'approche visant à traduire les avancées en neurosciences et en génétique en applications cliniques novatrices?",
+                "answers": [
+                    {
+                        "text": "Recherche translationnelle"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "43",
+                "question": "Quelle est l'initiative recommandée pour prévenir les troubles mentaux en réduisant les facteurs de risque?",
+                "answers": [
+                    {
+                        "text": "Initiatives éducatives et promotion de la santé mentale"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "44",
+                "question": "Quelle est l'approche qui combine des traitements conventionnels avec des thérapies complémentaires pour une prise en charge holistique?",
+                "answers": [
+                    {
+                        "text": "Médecine intégrative"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "45",
+                "question": "Quelle est l'approche recommandée pour traiter les troubles de l'humeur et les troubles anxieux?",
+                "answers": [
+                    {
+                        "text": "Approches médicamenteuses et psychothérapeutiques"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "46",
+                "question": "Quelle est l'une des méthodes utilisées pour évaluer et diagnostiquer les troubles psychiatriques?",
+                "answers": [
+                    {
+                        "text": "Entretiens cliniques et questionnaires standardisés"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "47",
+                "question": "Quel est l'outil de classification souvent utilisé par les psychiatres pour établir des diagnostics précis?",
+                "answers": [
+                    {
+                        "text": "DSM-5 (Manuel diagnostique et statistique des troubles mentaux)"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "48",
+                "question": "Quel est l'un des principaux défis éthiques en psychiatrie concernant les traitements psychiatriques involontaires?",
+                "answers": [
+                    {
+                        "text": "Équilibrer les droits individuels avec la protection de la santé publique"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+                "id": "49",
+                "question": "Quelle est l'initiative recommandée pour renforcer l'accès aux soins de santé mentale dans les communautés locales?",
+                "answers": [
+                    {
+                        "text": "Développer des programmes de santé mentale adaptés aux besoins culturels spécifiques"
+                    }
+                ],
+                "is_impossible": false
+            },
+            {
+              "id": "50",
+              "question": "Quelles sont les approches thérapeutiques de Troisième Vague mentionnées dans le texte?",
+              "answers": [
+                {
+                  "text": "Les Thérapies Comportementales et Cognitives de Troisième Vague comme l'ACT et la MBCT."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "51",
+              "question": "Quelles sont les approches thérapeutiques basées sur les relations interpersonnelles mentionnées?",
+              "answers": [
+                {
+                  "text": "La Thérapie de Soutien Psychodynamique."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "52",
+              "question": "Comment les Thérapies Familiales et de Couple sont-elles impliquées dans le traitement selon le texte?",
+              "answers": [
+                {
+                  "text": "Elles impliquent les proches dans le traitement pour renforcer les dynamiques relationnelles."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "53",
+              "question": "Qu'est-ce que les Thérapies Neurobiologiques et Interventionnelles visent à traiter?",
+              "answers": [
+                {
+                  "text": "Elles visent à traiter la dépression résistante et d'autres troubles psychiatriques via des méthodes comme la Stimulation Cérébrale Profonde."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "54",
+              "question": "Qu'est-ce que la psychiatrie intégrative cherche à explorer selon le texte?",
+              "answers": [
+                {
+                  "text": "Elle explore les impacts des nutriments, des régimes alimentaires, de la microbiote intestinale et de l'axe intestin-cerveau sur la santé mentale."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "55",
+              "question": "Quel rôle jouent les neurosciences dans le domaine de la psychiatrie?",
+              "answers": [
+                {
+                  "text": "Elles sont cruciales pour comprendre les bases biologiques des troubles mentaux et développer de nouvelles approches thérapeutiques."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "56",
+              "question": "Qu'est-ce que la psychiatrie transculturelle explore selon le texte?",
+              "answers": [
+                {
+                  "text": "Elle explore l'influence des différences culturelles sur la santé mentale et la pratique clinique, ainsi que l'adaptation des soins aux diverses cultures."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "57",
+              "question": "Quelle est l'importance de l'éthique en recherche psychiatrique selon le texte?",
+              "answers": [
+                {
+                  "text": "Elle est cruciale pour préserver les droits des participants, assurer l'intégrité scientifique, et évaluer les bénéfices et risques des recherches sur les troubles mentaux."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "58",
+              "question": "Quel est le rôle de la psychiatrie en santé publique selon le texte?",
+              "answers": [
+                {
+                  "text": "Elle développe des politiques et des programmes pour prévenir les troubles mentaux, réduire la stigmatisation et améliorer l'accès aux soins."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "59",
+              "question": "Quelles sont les catégories principales de symptômes de la schizophrénie selon le texte?",
+              "answers": [
+                {
+                  "text": "Les symptômes positifs, négatifs et cognitifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "60",
+              "question": "Quels sont les facteurs mentionnés comme contribuant au développement de la schizophrénie?",
+              "answers": [
+                {
+                  "text": "Les facteurs génétiques, environnementaux et les dysfonctionnements neurobiologiques."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "61",
+              "question": "Sur quoi repose le diagnostic de la schizophrénie selon le DSM-5?",
+              "answers": [
+                {
+                  "text": "Il repose sur des critères nécessitant la présence continue de symptômes pendant au moins six mois, incluant un mois de symptômes actifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "62",
+              "question": "Quelles sont les approches recommandées pour la prise en charge de la schizophrénie selon le texte?",
+              "answers": [
+                {
+                  "text": "Une combinaison de médicaments antipsychotiques et de thérapies psychosociales comme la TCC et la formation aux compétences sociales."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "63",
+              "question": "Qu'est-ce qu'un trouble mental selon la définition donnée dans le texte?",
+              "answers": [
+                {
+                  "text": "Un trouble mental se caractérise par une altération majeure, sur le plan clinique, de l’état cognitif, de la régulation des émotions ou du comportement d’un individu. Il s’accompagne généralement d’un sentiment de détresse ou de déficiences fonctionnelles dans des domaines importants."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "64",
+              "question": "Quels sont les troubles mentaux les plus courants dans le monde?",
+              "answers": [
+                {
+                  "text": "Les troubles anxieux et les troubles dépressifs sont les plus courants."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "65",
+              "question": "Quelles ont été les conséquences des pandémies de COVID-19 sur les troubles anxieux et dépressifs?",
+              "answers": [
+                {
+                  "text": "Une augmentation de 26 % pour les troubles anxieux et de 28 % pour les troubles dépressifs majeurs en un an."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "66",
+              "question": "Quelle proportion de personnes atteintes de troubles mentaux ne reçoit pas de soins efficaces?",
+              "answers": [
+                {
+                  "text": "La plupart des individus présentant des troubles mentaux n’ont pas accès à des soins efficaces."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "67",
+              "question": "Quel est l'impact des troubles de l'alimentation sur la santé des individus?",
+              "answers": [
+                {
+                  "text": "Les troubles de l’alimentation entraînent un risque pour la santé voire des effets très néfastes sur la santé, un grand sentiment de détresse ou encore des déficiences fonctionnelles majeures."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "68",
+              "question": "Quelles sont les principales catégories de troubles mentaux décrites dans le texte?",
+              "answers": [
+                {
+                  "text": "Les principales catégories de troubles mentaux incluent les troubles anxieux, les troubles dépressifs, la schizophrénie, les troubles de l’alimentation, les troubles bipolaires, les troubles post-traumatiques et les troubles neurodéveloppementaux."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "69",
+              "question": "Quels sont les autres professionnels de santé spécialisés dans le traitement de la maladie mentale, en plus des psychiatres?",
+              "answers": [
+                {
+                  "text": "Les psychologues cliniques, les infirmiers praticiens en psychiatrie et les assistants sociaux."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "70",
+              "question": "Quelle est la principale distinction légale entre les psychiatres et les autres professionnels de santé spécialisés en psychiatrie?",
+              "answers": [
+                {
+                  "text": "Les psychiatres et certains infirmiers praticiens en psychiatrie sont autorisés à prescrire des médicaments dans certains États, contrairement aux autres professionnels de santé spécialisés en psychiatrie qui se concentrent principalement sur la psychothérapie."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "71",
+              "question": "Quels types de médecins prescrivent également des médicaments pour traiter les troubles mentaux, en plus des psychiatres?",
+              "answers": [
+                {
+                  "text": "Nombre de médecins généralistes ainsi que d’autres types de médecins."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "72",
+              "question": "Quelles sont les deux principales catégories de traitements des troubles mentaux mentionnées dans le texte?",
+              "answers": [
+                {
+                  "text": "Les traitements somatiques et les traitements psychothérapeutiques."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "73",
+              "question": "Quel type de traitement implique la sismothérapie?",
+              "answers": [
+                {
+                  "text": "La sismothérapie, ou thérapie électroconvulsive (ECT)."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "74",
+              "question": "Quel est le principal effet secondaire connu de la sismothérapie?",
+              "answers": [
+                {
+                  "text": "La perte de mémoire temporaire."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "75",
+              "question": "Quelles sont les autres techniques de stimulation cérébrale mentionnées dans le texte?",
+              "answers": [
+                {
+                  "text": "La stimulation magnétique transcrânienne répétitive (rTMS) et la stimulation du nerf vague."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "76",
+              "question": "Quel est l'avantage principal de l'association de médicaments et de psychothérapie selon le texte?",
+              "answers": [
+                {
+                  "text": "Elle est plus efficace que chacune des méthodes de traitement utilisée seule."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "77",
+              "question": "Quelle est la classe d'antidépresseurs la plus largement utilisée pour traiter la dépression?",
+              "answers": [
+                {
+                  "text": "Les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS)."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "78",
+              "question": "Quel type de médicaments est utilisé principalement pour traiter les troubles anxieux tels que le trouble panique?",
+              "answers": [
+                {
+                  "text": "Les médicaments anxiolytiques."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "79",
+              "question": "Quelle est la principale classe de médicaments utilisée pour traiter le trouble bipolaire?",
+              "answers": [
+                {
+                  "text": "Les psychorégulateurs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "80",
+              "question": "Quel est le but principal de la thérapie comportementale?",
+              "answers": [
+                {
+                  "text": "Aider la personne à désapprendre des comportements inappropriés et à apprendre des comportements adaptatifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "81",
+              "question": "Quelle est la base théorique de la thérapie comportementale?",
+              "answers": [
+                {
+                  "text": "La théorie de l’apprentissage, qui estime que les comportements anormaux sont déterminés par de mauvais apprentissages."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "82",
+              "question": "Quelle est l'hypothèse de base de la thérapie cognitive?",
+              "answers": [
+                {
+                  "text": "Les sentiments et les comportements de la personne sont déterminés par la façon dont elle interprète ses expériences."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "83",
+              "question": "Quel est l'objectif principal de la thérapie interpersonnelle?",
+              "answers": [
+                {
+                  "text": "Améliorer la qualité des relations d’une personne dépressive en traitant les peines non résolues et les conflits interpersonnels."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "84",
+              "question": "Qui a développé la psychanalyse et quand?",
+              "answers": [
+                {
+                  "text": "Sigmund Freud au début du 20e siècle."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "85",
+              "question": "Quelle est la principale méthode utilisée dans la psychanalyse?",
+              "answers": [
+                {
+                  "text": "La pratique des associations libres."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "86",
+              "question": "Quelle est la forme de psychothérapie la plus répandue?",
+              "answers": [
+                {
+                  "text": "La psychothérapie de soutien."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "87",
+              "question": "Qu'est-ce que la stimulation magnétique transcrânienne (rTMS) vise à stimuler directement?",
+              "answers": [
+                {
+                  "text": "Le cerveau."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "88",
+              "question": "Qu'est-ce que la thérapie comportementale d'exposition vise à réduire?",
+              "answers": [
+                {
+                  "text": "La peur en exposant progressivement la personne à des stimuli redoutés."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "89",
+              "question": "Quel est l'objectif principal des thérapies qui stimulent le cerveau?",
+              "answers": [
+                {
+                  "text": "Réguler l'humeur pour soulager les symptômes de la dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "90",
+              "question": "Qu'est-ce que les méthodes modernes ont contribué à réduire dans la sismothérapie?",
+              "answers": [
+                {
+                  "text": "Les risques associés à cette méthode, comme la perte de mémoire temporaire."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "91",
+              "question": "Quelle est la prévalence estimée des troubles psychiques selon l'OMS ?",
+              "answers": [
+                {
+                  "text": "1 personne sur 4 sera touchée par un trouble psychique à un moment de sa vie selon l’OMS."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "92",
+              "question": "Sur quoi repose principalement le diagnostic des troubles psychiques ?",
+              "answers": [
+                {
+                  "text": "Le diagnostic repose principalement sur l’entretien clinique et l’observation des symptômes."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "93",
+              "question": "Quels sont les éléments pris en compte lors de l'évaluation initiale d'un patient en psychiatrie ?",
+              "answers": [
+                {
+                  "text": "L'évaluation initiale inclut une discussion sur l’histoire personnelle, familiale, médicale et psychiatrique du patient, ses habitudes de vie, ses relations interpersonnelles, et son fonctionnement social et professionnel."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "94",
+              "question": "Quels types de tests peuvent être nécessaires pour exclure des conditions médicales pouvant expliquer les symptômes psychiques ?",
+              "answers": [
+                {
+                  "text": "Des tests de laboratoire ou des examens d'imagerie peuvent être nécessaires."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "95",
+              "question": "Quels outils peuvent être utilisés pour quantifier la sévérité des symptômes psychiques ?",
+              "answers": [
+                {
+                  "text": "Des questionnaires standardisés et des échelles d'évaluation peuvent être utilisés."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "96",
+              "question": "Quels sont les manuels utilisés pour classifier les troubles mentaux ?",
+              "answers": [
+                {
+                  "text": "Les professionnels utilisent des manuels comme le DSM-5 de l'APA ou la CIM-11 de l'OMS."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "97",
+              "question": "Pourquoi le diagnostic en psychiatrie est-il souvent un processus dynamique ?",
+              "answers": [
+                {
+                  "text": "Le diagnostic est un processus dynamique pour ajuster le traitement en fonction de l’évolution des symptômes et des réponses au traitement."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "98",
+              "question": "Quelle est l'importance de la collaboration avec d'autres professionnels de la santé mentale en psychiatrie ?",
+              "answers": [
+                {
+                  "text": "La collaboration avec d'autres professionnels est essentielle pour une évaluation complète et un plan de traitement efficace."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "99",
+              "question": "Quelles évaluations spécialisées peuvent parfois être nécessaires en psychiatrie ?",
+              "answers": [
+                {
+                  "text": "Des tests neuropsychologiques ou des consultations avec des experts en troubles spécifiques peuvent être nécessaires."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "100",
+              "question": "Qu'est-ce que les manuels de classification des troubles mentaux fournissent aux professionnels de la santé ?",
+              "answers": [
+                {
+                  "text": "Les manuels fournissent des critères spécifiques pour chaque trouble mental, facilitant un diagnostic précis et cohérent."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "101",
+              "question": "Comment la psychiatrie a-t-elle évolué depuis son origine ?",
+              "answers": [
+                {
+                  "text": "La psychiatrie a évolué d'une approche entrelacée avec la philosophie et la théologie vers une approche plus empirique, s’appuyant sur l’observation clinique et la classification des symptômes."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "102",
+              "question": "Quels domaines scientifiques ont influencé la transformation de la psychiatrie aux 19e et 20e siècles ?",
+              "answers": [
+                {
+                  "text": "Les sciences modernes ont influencé la transformation de la psychiatrie aux 19e et 20e siècles."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "103",
+              "question": "Qu'est-ce qui a révolutionné le traitement des troubles mentaux dans la psychiatrie moderne ?",
+              "answers": [
+                {
+                  "text": "L’essor de la psychopharmacologie et l'introduction des médicaments psychotropes ont révolutionné le traitement des troubles mentaux."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "104",
+              "question": "Quel rôle la psychothérapie joue-t-elle dans le traitement des troubles mentaux ?",
+              "answers": [
+                {
+                  "text": "La psychothérapie s’est développée comme une méthode complémentaire importante pour aider les individus à surmonter leurs difficultés émotionnelles et comportementales."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "105",
+              "question": "Comment les approches traditionnelles en psychiatrie ont-elles été enrichies par l'introduction des sciences modernes ?",
+              "answers": [
+                {
+                  "text": "Les approches traditionnelles ont été enrichies par l'introduction de méthodes scientifiques et de traitements médicaux."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "106",
+              "question": "Quels ont été les impacts de l'introduction des traitements psychotropes dans la pratique psychiatrique ?",
+              "answers": [
+                {
+                  "text": "Les traitements psychotropes ont offert de nouvelles possibilités thérapeutiques là où les approches traditionnelles étaient limitées."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "107",
+              "question": "Pourquoi la psychiatrie est-elle décrite comme un domaine en évolution constante malgré ses avancées ?",
+              "answers": [
+                {
+                  "text": "La psychiatrie est en évolution constante car les chercheurs continuent d’explorer les bases neurobiologiques des troubles mentaux et cherchent à développer des traitements plus ciblés et efficaces."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "108",
+              "question": "Quel rôle jouent les perspectives sociales et culturelles dans la prise en charge des troubles mentaux ?",
+              "answers": [
+                {
+                  "text": "Les perspectives sociales et culturelles influencent à la fois les diagnostics et les interventions thérapeutiques en psychiatrie."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "109",
+              "question": "Quels sont les défis actuels auxquels la psychiatrie est confrontée malgré ses progrès scientifiques ?",
+              "answers": [
+               {
+                  "text": "La stigmatisation sociale, l’accès aux soins et la diversité des présentations cliniques sont des défis importants pour la psychiatrie."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "110",
+              "question": "Qu'est-ce qui continue de motiver la recherche en psychiatrie malgré les avancées déjà réalisées ?",
+              "answers": [
+                {
+                  "text": "La recherche en psychiatrie est motivée par la nécessité de comprendre les bases neurobiologiques des troubles mentaux et de développer des traitements plus efficaces."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "111",
+              "question": "Qu'est-ce que la diversité des approches thérapeutiques en psychiatrie reflète principalement ?",
+              "answers": [
+                {
+                  "text": "La diversité des approches thérapeutiques reflète la complexité des troubles mentaux eux-mêmes."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "112",
+              "question": "Quelles sont quelques-unes des nouvelles méthodes thérapeutiques émergentes en psychiatrie ?",
+              "answers": [
+                {
+                  "text": "Des méthodes comme la stimulation cérébrale profonde et la thérapie génique émergent en psychiatrie."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "113",
+              "question": "Pourquoi l'intégration des approches holistiques gagne-t-elle en importance en psychiatrie ?",
+              "answers": [
+                {
+                  "text": "L'intégration des approches holistiques prend en compte les dimensions psychologiques, sociales et environnementales des individus."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "114",
+              "question": "Qu'est-ce que le panorama de la psychiatrie témoigne en termes d'évolution ?",
+              "answers": [
+                {
+                  "text": "Le panorama de la psychiatrie témoigne d'une évolution continue et dynamique, ancrée dans la recherche scientifique et tenant compte des réalités complexes des individus et de la société."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "115",
+              "question": "Qu'est-ce que les maladies psychiatriques englobent principalement ?",
+              "answers": [
+                {
+                  "text": "Les maladies psychiatriques englobent un large spectre de troubles mentaux qui affectent la pensée, les émotions et les comportements des individus."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "116",
+              "question": "Quels sont quelques exemples de symptômes de la dépression ?",
+              "answers": [
+                {
+                  "text": "La dépression se caractérise par une tristesse persistante, une perte d'intérêt pour les activités habituelles, des troubles du sommeil et de l'appétit."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "117",
+              "question": "Comment se distingue le trouble bipolaire ?",
+              "answers": [
+                {
+                  "text": "Le trouble bipolaire se distingue par des épisodes alternant entre phases d'euphorie (manie) et de dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "118",
+              "question": "Quels sont les symptômes caractéristiques des troubles anxieux ?",
+              "answers": [
+                {
+                  "text": "Les troubles anxieux se manifestent par une anxiété excessive et des comportements de peur irrationnels, incluant le trouble panique, les phobies et le trouble obsessionnel-compulsif (TOC)."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "119",
+              "question": "Qu'est-ce qui caractérise les psychoses comme la schizophrénie ?",
+              "answers": [
+                {
+                  "text": "Les psychoses comme la schizophrénie entraînent une perte de contact avec la réalité, des hallucinations et des idées délirantes."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "120",
+              "question": "Quelles sont les principales méthodes de traitement des troubles mentaux mentionnées dans le texte ?",
+              "answers": [
+                {
+                  "text": "Les principales méthodes de traitement incluent les médicaments, les thérapies psychologiques, ainsi que des interventions sociales et éducatives adaptées."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "121",
+              "question": "Quels sont les impacts des troubles mentaux sur la vie quotidienne des individus qui en souffrent ?",
+              "answers": [
+                {
+                  "text": "Les troubles mentaux ont un impact significatif sur la vie quotidienne et les relations sociales, allant de légers à sévères."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "122",
+              "question": "Quelles sont les caractéristiques principales de la dépression selon le texte ?",
+              "answers": [
+                {
+                  "text": "La dépression est caractérisée par des sentiments persistants de tristesse, de perte d'intérêt et de désespoir, souvent accompagnés de troubles du sommeil et de l'appétit."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "123",
+              "question": "Quelles sont les phases distinctes du trouble bipolaire ?",
+              "answers": [
+                {
+                  "text": "Le trouble bipolaire implique des phases alternant entre euphorie (manie) et épisodes dépressifs graves."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "124",
+              "question": "Quelles sont les principales manifestations des troubles anxieux mentionnées dans le texte ?",
+              "answers": [
+                {
+                  "text": "Les troubles anxieux se manifestent par une anxiété excessive, des peurs irrationnelles et des comportements compulsifs, incluant le trouble panique, les phobies et le trouble obsessionnel-compulsif (TOC)."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "125",
+              "question": "Quels sont les différents types de troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Trouble bipolaire de type I, trouble bipolaire de type II, trouble cyclothymique, et autres types induits par une substance ou une condition médicale."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "126",
+              "question": "Quelles sont les caractéristiques du trouble bipolaire de type I ?",
+              "answers": [
+                {
+                  "text": "Au moins un épisode maniaque qui peut être précédé ou suivi par des épisodes dépressifs majeurs ou hypomaniaques."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "127",
+              "question": "Comment se distingue le trouble bipolaire de type II du type I ?",
+              "answers": [
+                {
+                  "text": "Implique des épisodes récurrents de dépression majeure et d'hypomanie, sans épisodes maniaques complets."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "128",
+              "question": "Qu'est-ce que le trouble cyclothymique ?",
+              "answers": [
+                {
+                  "text": "Caractérisé par des périodes d'hypomanie et de symptômes dépressifs moins sévères, mais qui persistent pendant au moins deux ans."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "129",
+              "question": "Quelles sont les causes possibles des troubles bipolaires et apparentés induits par une substance ou une condition médicale ?",
+              "answers": [
+                {
+                  "text": "Ces troubles présentent des caractéristiques similaires aux types I et II mais sont causés par des facteurs externes comme l'utilisation de substances ou des conditions médicales."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "130",
+              "question": "Quels sont les symptômes typiques d'un épisode maniaque ?",
+              "answers": [
+                {
+                  "text": "Humeur anormalement élevée, expansive ou irritable, augmentation de l'énergie et de l'activité, sentiments de grandeur ou d'importance, diminution du besoin de sommeil, paroles rapides, pensées accélérées, comportements impulsifs ou à risque."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "131",
+              "question": "Quels comportements impulsifs peuvent être observés lors d'un épisode maniaque ?",
+              "answers": [
+                {
+                  "text": "Dépenses excessives, comportement sexuel imprudent."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "132",
+              "question": "Quels sont les principaux symptômes d'un épisode dépressif dans le cadre du trouble bipolaire ?",
+              "answers": [
+                {
+                  "text": "Humeur dépressive persistante, perte d'intérêt ou de plaisir dans les activités habituelles, fatigue ou perte d'énergie, troubles du sommeil, sentiments de culpabilité ou de dévalorisation, difficulté à se concentrer, pensées de mort ou de suicide."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "133",
+              "question": "Comment la fatigue et les troubles du sommeil se manifestent-ils lors d'un épisode dépressif ?",
+              "answers": [
+                {
+                  "text": "Fatigue persistante ou perte d'énergie, insomnie ou hypersomnie."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "134",
+              "question": "Quels symptômes cognitifs peuvent survenir pendant un épisode dépressif ?",
+              "answers": [
+                {
+                  "text": "Difficulté à se concentrer."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "135",
+              "question": "Quels facteurs génétiques peuvent contribuer au développement des troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Histoire familiale de troubles bipolaires ou autres troubles de l'humeur."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "136",
+              "question": "Comment les anomalies biologiques peuvent-elles influencer les troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Anomalies dans la structure ou le fonctionnement du cerveau."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "137",
+              "question": "Quels types de facteurs environnementaux peuvent déclencher des troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Stress important, traumatismes ou événements de vie marquants."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "138",
+              "question": "Quels types de médicaments sont couramment utilisés pour traiter les troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Stabilisateurs de l'humeur (comme le lithium), anticonvulsivants, antipsychotiques, antidépresseurs (souvent en combinaison avec un stabilisateur de l'humeur)."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "139",
+              "question": "Pourquoi les antidépresseurs sont-ils souvent utilisés en combinaison avec un stabilisateur de l'humeur ?",
+              "answers": [
+                {
+                  "text": "Pour éviter la manie."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "140",
+              "question": "En quoi consiste la thérapie cognitivo-comportementale pour les troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Elle aide à identifier et modifier les pensées et comportements négatifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "141",
+              "question": "Comment la psychoéducation peut-elle aider les personnes atteintes de troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "En fournissant des informations sur le trouble, les symptômes, et les traitements, aidant ainsi les patients à mieux gérer leur condition."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "142",
+              "question": "Quels sont les avantages de la thérapie de groupe ou familiale pour les troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Elle offre un soutien social et émotionnel, améliore la communication et la compréhension entre les membres de la famille."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "143",
+              "question": "Pourquoi est-il important de maintenir une routine régulière pour les personnes atteintes de troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Pour stabiliser l'humeur et réduire les risques de rechute."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "144",
+              "question": "Comment l'alcool et les drogues peuvent-ils affecter les troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Ils peuvent aggraver les symptômes et interférer avec les traitements."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "145",
+              "question": "Quelles stratégies de gestion du stress sont recommandées pour les personnes atteintes de troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Pratiques de relaxation, techniques de gestion du temps, exercice physique régulier, et autres méthodes de réduction du stress."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "146",
+              "question": "Pourquoi le suivi régulier avec un professionnel de la santé mentale est-il crucial pour la gestion des troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Pour surveiller les symptômes, ajuster les traitements, et fournir un soutien continu."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "147",
+              "question": "Pourquoi une gestion à long terme est-elle nécessaire pour les troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Pour stabiliser l'humeur, améliorer la qualité de vie, et prévenir les complications graves."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "148",
+              "question": "Quels sont les avantages d'un diagnostic et d'un traitement précoces des troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Ils peuvent aider à stabiliser l'humeur plus rapidement et à prévenir les épisodes graves."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "149",
+              "question": "Comment la collaboration avec les professionnels de la santé mentale peut-elle améliorer la gestion des troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "En offrant des soins coordonnés et spécialisés pour mieux gérer les symptômes et ajuster les traitements."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "150",
+              "question": "Quel rôle jouent les proches dans la gestion efficace des troubles bipolaires ?",
+              "answers": [
+                {
+                  "text": "Le soutien des proches est essentiel pour la stabilité émotionnelle, l'observance du traitement, et la gestion des épisodes."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "151",
+              "question": "Qu'est-ce que la psychiatrie ?",
+              "answers": [
+                {
+                  "text": "la branche de la médecine qui s'occupe des troubles mentaux."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "152",
+              "question": "Qu'est-ce que la dépression et comment affecte-t-elle les individus ?",
+              "answers": [
+                {
+                  "text": "La dépression est un trouble mental qui affecte profondément les émotions, les pensées et les comportements quotidiens des individus."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "153",
+              "question": "Quels sont les symptômes courants de la dépression ?",
+              "answers": [
+                {
+                  "text": "Les symptômes courants de la dépression incluent une tristesse persistante, une perte d'intérêt pour les activités, des sentiments de désespoir, une fatigue marquée, des troubles du sommeil et de l'appétit, ainsi que des difficultés de concentration."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "154",
+              "question": "Comment la dépression affecte-t-elle les pensées et les comportements quotidiens ?",
+              "answers": [
+                {
+                  "text": "La dépression peut entraîner une diminution de l'humeur, des troubles du sommeil, une perte d'intérêt pour les activités habituelles, et une tendance à se replier socialement."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "155",
+              "question": "Quels sont les signes émotionnels de la dépression ?",
+              "answers": [
+                {
+                  "text": "Les signes émotionnels de la dépression comprennent la tristesse profonde, le désespoir, la culpabilité excessive, et parfois des pensées suicidaires."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "156",
+              "question": "Quels symptômes de la dépression sont liés à l'énergie et au sommeil ?",
+              "answers": [
+                {
+                  "text": "Les symptômes de la dépression liés à l'énergie et au sommeil incluent une fatigue marquée, des troubles du sommeil comme l'insomnie ou l'excès de sommeil."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "157",
+              "question": "Comment la dépression influence-t-elle l'appétit d'une personne ?",
+              "answers": [
+                {
+                  "text": "La dépression peut affecter l'appétit des individus, souvent en provoquant une perte ou un gain de poids significatif."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "158",
+              "question": "Quels sont les facteurs biologiques impliqués dans la dépression ?",
+              "answers": [
+                {
+                  "text": "Les facteurs biologiques impliqués dans la dépression incluent des déséquilibres chimiques dans le cerveau, notamment des perturbations des neurotransmetteurs comme la sérotonine, la noradrénaline et la dopamine."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "159",
+              "question": "En quoi les déséquilibres chimiques dans le cerveau contribuent-ils à la dépression ?",
+              "answers": [
+                {
+                  "text": "Les déséquilibres chimiques dans le cerveau, tels que la diminution de la sérotonine, peuvent contribuer à la manifestation des symptômes dépressifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "160",
+              "question": "Quels traumatismes passés peuvent conduire à la dépression ?",
+              "answers": [
+                {
+                  "text": "Les traumatismes passés, comme les abus physiques, émotionnels ou sexuels, sont des facteurs de risque importants pour le développement de la dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "161",
+              "question": "Comment les problèmes financiers peuvent-ils contribuer à la dépression ?",
+              "answers": [
+                {
+                  "text": "Les problèmes financiers peuvent augmenter le stress chronique et contribuer au développement de la dépression chez certaines personnes."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "162",
+              "question": "Quels sont les principaux outils utilisés pour diagnostiquer la dépression ?",
+              "answers": [
+                {
+                  "text": "Le diagnostic de la dépression repose sur des entretiens cliniques approfondis menés par des professionnels de santé mentale."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "163",
+              "question": "Comment les entretiens cliniques aident-ils à diagnostiquer la dépression ?",
+              "answers": [
+                {
+                  "text": "Les entretiens cliniques permettent d'évaluer les symptômes, l'histoire médicale et les antécédents familiaux pour confirmer le diagnostic de dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "164",
+              "question": "Quelles échelles de dépression sont couramment utilisées pour évaluer cette condition ?",
+              "answers": [
+                {
+                  "text": "Les échelles de dépression, telles que l'échelle de dépression de Beck ou l'inventaire de dépression de Hamilton, sont souvent utilisées pour évaluer la sévérité des symptômes dépressifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "165",
+              "question": "Quels types de médicaments sont utilisés dans le traitement de la dépression ?",
+              "answers": [
+                {
+                  "text": "Les médicaments utilisés dans le traitement de la dépression comprennent les antidépresseurs, tels que les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS) ou les inhibiteurs de la recapture de la noradrénaline et de la sérotonine (IRNS)."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "166",
+              "question": "Comment la psychothérapie aide-t-elle les personnes souffrant de dépression ?",
+              "answers": [
+                {
+                  "text": "La psychothérapie, comme la thérapie cognitivo-comportementale (TCC) ou la thérapie interpersonnelle, aide les individus à explorer et à modifier les pensées négatives et les comportements qui contribuent à la dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "167",
+              "question": "Quelles modifications du mode de vie peuvent aider à gérer la dépression ?",
+              "answers": [
+                {
+                  "text": "Les modifications du mode de vie incluent l'adoption de routines régulières, l'exercice physique régulier et une alimentation équilibrée, qui peuvent aider à améliorer les symptômes dépressifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "168",
+              "question": "Quels sont des exemples de thérapies alternatives pour traiter la dépression ?",
+              "answers": [
+                {
+                  "text": "Les thérapies alternatives telles que la méditation, l'acupuncture ou la thérapie par la lumière peuvent compléter le traitement traditionnel de la dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "169",
+              "question": "Quels sont les moyens de prévenir la dépression ?",
+              "answers": [
+                {
+                  "text": "La prévention de la dépression implique le maintien d'un équilibre de vie sain, la gestion du stress, et l'identification précoce des signes avant-coureurs de la dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "170",
+              "question": "Comment le soutien social joue-t-il un rôle dans la gestion de la dépression ?",
+              "answers": [
+                {
+                  "text": "Le soutien social, y compris le soutien familial et les amitiés solides, peut jouer un rôle crucial dans la gestion et la prévention de la dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "171",
+              "question": "Pourquoi est-il important de rester vigilant face aux signes précoces de la dépression ?",
+              "answers": [
+                {
+                  "text": "Il est important de rester vigilant face aux signes précoces de dépression tels que la perte d'intérêt pour les activités, les changements dans les habitudes de sommeil ou d'appétit, et les sentiments persistants de tristesse."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "172",
+              "question": "Comment l'adhésion aux traitements prescrits aide-t-elle à gérer la dépression ?",
+              "answers": [
+                {
+                  "text": "L'adhésion aux traitements prescrits, y compris la prise régulière de médicaments et la participation continue à la thérapie, est essentielle pour gérer efficacement la dépression."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "173",
+              "question": "Qu'est-ce que les troubles obsessionnels compulsifs (TOC) et comment se manifestent-ils?",
+              "answers": [
+                {
+                  "text": "Les troubles obsessionnels compulsifs (TOC) sont des troubles mentaux caractérisés par des obsessions, telles que des pensées ou des images intrusives provoquant de l'anxiété, ainsi que des compulsions, qui sont des comportements répétitifs effectués pour réduire cette anxiété."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "174",
+              "question": "Quelles sont les principales caractéristiques des obsessions dans les TOC?",
+              "answers": [
+                {
+                  "text": "Les obsessions dans les TOC sont des pensées, des images ou des impulsions récurrentes et persistantes qui sont intrusives et provoquent de l'anxiété ou du malaise significatif."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "175",
+              "question": "Qu'est-ce que les compulsions et quel est leur rôle dans les TOC?",
+              "answers": [
+                {
+                  "text": "Les compulsions sont des comportements répétitifs ou des actes mentaux que la personne se sent poussée à réaliser en réponse à une obsession ou selon des règles strictes. Elles visent à prévenir ou à réduire l'anxiété ou à prévenir un événement redouté."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "176",
+              "question": "Quels sont quelques exemples de compulsions couramment associées aux TOC?",
+              "answers": [
+                {
+                  "text": "Quelques exemples de compulsions couramment associées aux TOC incluent la vérification compulsive (comme vérifier plusieurs fois si une porte est verrouillée), le lavage excessif des mains par peur de la contamination, le besoin excessif de rangement ou d'ordre, et le besoin de symétrie parfaite."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "177",
+              "question": "Comment les TOC peuvent-ils perturber la vie quotidienne d'une personne?",
+              "answers": [
+                {
+                  "text": "Les TOC peuvent sérieusement perturber la vie quotidienne en affectant les relations sociales, le travail et la qualité de vie globale en raison du temps et de l'énergie consacrés aux obsessions et aux compulsions."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "178",
+              "question": "Quels sont les domaines de la vie qui peuvent être affectés par les TOC?",
+              "answers": [
+                {
+                  "text": "Les relations sociales peuvent être affectées car les personnes atteintes de TOC peuvent avoir du mal à participer à des activités sociales normales. Au travail, les TOC peuvent entraîner une diminution de la productivité et un stress accru."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "179",
+              "question": "Quelles sont les options de traitement disponibles pour les TOC?",
+              "answers": [
+                {
+                  "text": "Le traitement des TOC peut inclure la thérapie cognitive-comportementale (TCC), les médicaments ou une combinaison des deux, adaptée à la gravité des symptômes et aux besoins individuels."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "180",
+              "question": "Qu'est-ce que la thérapie cognitive-comportementale et comment est-elle utilisée dans le traitement des TOC?",
+              "answers": [
+                {
+                  "text": "La thérapie cognitive-comportementale (TCC) est une approche thérapeutique qui vise à modifier les pensées et les comportements associés aux TOC. Elle inclut souvent des techniques d'exposition et de prévention de la réponse pour aider à réduire l'anxiété associée aux obsessions."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "181",
+              "question": "Quels types de médicaments sont souvent prescrits pour les personnes souffrant de TOC?",
+              "answers": [
+                {
+                  "text": "Les médicaments couramment prescrits pour les TOC incluent les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS) et d'autres types d'antidépresseurs qui aident à réduire les symptômes d'anxiété et d'obsessions."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "182",
+              "question": "Comment décide-t-on du traitement approprié pour les TOC en fonction de la sévérité et des besoins individuels?",
+              "answers": [
+                {
+                  "text": "Le traitement des TOC est souvent déterminé en fonction de la sévérité des symptômes, des préférences personnelles et de la réponse individuelle aux différentes options thérapeutiques disponibles."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "183",
+              "question": "Qu'est-ce que l'autisme et comment affecte-t-il les personnes?",
+              "answers": [
+                {
+                  "text": "L'autisme est un trouble neuro-développemental qui influence la communication, le comportement et les interactions sociales des individus autistes. Il existe sous divers niveaux de sévérité, regroupés sous le terme de 'trouble du spectre autistique' (TSA)."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "184",
+              "question": "Quelles sont les caractéristiques communes observées chez les personnes autistes?",
+              "answers": [
+                {
+                  "text": "Les caractéristiques communes incluent des difficultés à comprendre les signaux sociaux, des intérêts restreints ou des comportements répétitifs."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "185",
+              "question": "L'autisme est-il considéré comme une maladie?",
+              "answers": [
+                {
+                  "text": "Non, l'autisme n'est pas une maladie mais plutôt une différence neurologique. Cela signifie que c'est une variation dans la manière dont une personne perçoit et interagit avec le monde."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "186",
+              "question": "Comment chaque personne autiste est-elle vue?",
+              "answers": [
+                {
+                  "text": "Chaque individu autiste est unique, avec ses propres forces et défis. Il est important de reconnaître cette diversité parmi les personnes autistes."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "187",
+              "question": "À quel âge peut-on diagnostiquer l'autisme?",
+              "answers": [
+                {
+                  "text": "L'autisme peut être diagnostiqué dès le jeune âge, mais il peut aussi être identifié plus tard dans la vie d'une personne."
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "188",
+              "question": "Quel rôle joue l'acceptation et le soutien dans la vie des personnes autistes?",
+              "answers": [
+                {
+                  "text": "L'acceptation et le soutien de la part de la famille, des amis et de la société sont cruciaux pour améliorer la qualité de vie des personnes autistes. Cela contribue à créer un environnement favorable et inclusif."
+                }
+              ],
+              "is_impossible": false
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }
