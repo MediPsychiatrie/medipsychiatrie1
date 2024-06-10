@@ -367,18 +367,6 @@ def api_chat():
 def api_history():
     return jsonify(chat_history)
 
-#--------------Host-------------------------------------------
-@app.route('/api/function', methods=['GET'])
-def my_function():
-    try:
-        # Function logic
-        return jsonify({"message": "Function executed successfully"})
-    except Exception as e:
-        # Handle errors
-        print(f"Function failed: {str(e)}")
-        return jsonify({"error": "Internal Server Error"}), 500
-
-
 #-----------Page----------------------------------------------------------------------
 
 @app.route('/404')
