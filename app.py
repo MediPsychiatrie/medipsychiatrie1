@@ -20,12 +20,9 @@ app.secret_key = 'gjsgft678gHRt4KQDgdqjddv17hsdALKnxixs'
 
 #----Firebase---------------------------------------------------------------------
 
-
-# Route pour gérer la soumission du formulaire
 @app.route('/register', methods=['POST'])
 def register():
     if request.method == 'POST':
-        # Récupérer les données du formulaire
         first_name = request.form['first_name']
         last_name = request.form['last_name']
         genre = request.form['Genre']
@@ -40,7 +37,6 @@ def register():
         country = request.form['country']
 
 
-        # Enregistrer les données dans Firestore
         doc_ref = db.collection('users').document()
         doc_ref.set({
             'first_name': first_name,
@@ -78,8 +74,7 @@ def registration():
     place = request.form['place']
     country = request.form['country']
 
-    # Process the data (store in database, etc.)
-    # Example:
+    
     user_data = {
         'first_name' : first_name,
         'last_name' : last_name,
@@ -102,16 +97,16 @@ def registration():
 @app.route('/demo', methods=['POST'])
 def demo():
     if request.method == 'POST':
-        # Récupérer les données du formulaire
+       
         name = request.form['name']
         mail_addr = request.form['mail']
         phone = request.form['phone']
         compte = request.form['compte']
         genre = request.form['Genre']
-        activite = request.form['Activité']
+        activite = request.form['Activite']
         lieu = request.form['lieu'] 
 
-        # Enregistrer les données dans Firebase Firestore
+       
         doc_ref = db.collection('doctors').document()
         doc_ref.set({
             'name': name,
@@ -131,27 +126,27 @@ def demo():
 @app.route('/login_patient', methods=['POST'])
 def login_patient():
     if request.method == 'POST':
-        # Récupérer les données du formulaire
+        
         email = request.form['email']
         password = request.form['password']
 
-        # Vérifier si les informations de connexion sont valides en interrogeant Firestore
+        
         users_ref = db.collection('users')
         query = users_ref.where('email', '==', email).where('password', '==', password).limit(1).get()
 
         if len(query) > 0:
-            # Si les informations de connexion sont valides, rediriger vers la page d'accueil avec l'email comme paramètre
+            
             return redirect(url_for('index', email=email))
         else:
-            # Si les informations de connexion sont invalides, rediriger vers la page de connexion avec un message d'erreur
-            return 'Identifiants invalides. Veuillez réessayer.'
+            
+            return 'Identifiants invalides. Veuillez reessayer.'
 
     else:
-        # Si la méthode de la requête n'est pas POST, renvoyer une erreur
+        
         return 'Invalid request method'
 @app.route('/')
 def index():
-    email = request.args.get('email')  # Récupère l'email depuis l'URL
+    email = request.args.get('email') 
     return render_template('index.html', email=email)
 
 #-------Login Doctor------------------------------------------------------------
@@ -159,25 +154,25 @@ def index():
 @app.route('/login_doctor', methods=['POST'])
 def login_doctor():
     if request.method == 'POST':
-        # Récupérer les données du formulaire
+        
         username = request.form['username']
         password = request.form['password']
 
-        # Vérifier si les informations de connexion sont valides en interrogeant Firestore
+        
         users_ref = db.collection('compte')
         query = users_ref.where('username', '==', username).where('password', '==', password).limit(1).get()
 
         if len(query) > 0:
-            # Si les informations de connexion sont valides, enregistrer le nom d'utilisateur dans la session
+            
             session['username'] = username
-            # Rediriger vers la page pour ajouter un rendez-vous
+           
             return redirect(url_for('add_time', username=username))
         else:
-            # Si les informations de connexion sont invalides, rediriger vers la page de connexion avec un message d'erreur
-            return 'Identifiants invalides. Veuillez réessayer.'
+            
+            return 'Identifiants invalides. Veuillez reessayer.'
 
     else:
-        # Si la méthode de la requête n'est pas POST, renvoyer une erreur
+        
         return 'Invalid request method'
     
 
@@ -190,7 +185,7 @@ def add():
             # Retrieve the data from the form
             date = request.form.get('date')
             time = request.form.get('time')
-            username = session['username']  # Retrieve the username from the session
+            username = session['username']  
 
             # Get current date and time
             current_datetime = datetime.now()
