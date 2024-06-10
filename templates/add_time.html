@@ -1,0 +1,296 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>MediPsychiatrie</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/doctor.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}">
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button -->
+		<ul class="pro-features">
+			<a class="get-pro" href="#">Chatbot</a>
+			<li class="big-title">chatbot</li>
+			<div style="height: 200px;" class="chat-box" id="chat-box"></div>
+			<div class="button">
+				<input type="text" id="user-input" placeholder="Type a message...">
+        		<button id="send-button">Envoyer</button>
+			</div>
+		</ul>
+	
+		<!-- Header Area -->
+		<header class="header" >	
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="{{ url_for('login') }}"><i class="icofont-long-arrow-left fa-4x" style="color: #1A76D1;"></i></a>
+									<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+
+        <!-- Add_time Area -->
+        <section class="contact-us section"  style="background: whitesmoke;">
+			<div class="container">
+				<div class="inner">
+					<form class="row" action="/add" method="post">
+                        <div class="col-lg-6"> 
+                            <div class="contact-us-form">
+                                <h2>{{ username }}</h2>
+                                <label>Entrer :</label>
+                                <input type="date" id="date" name="date" required >
+                                <input type="time" id="time" name="time" required>
+                                <input type="submit" id="add" name="add" value="Inscrivez-Vous">
+                            </div>
+                        </div>
+                        <div class="col-lg-6"> 
+                            
+                        </div>
+					</form>
+				</div>
+			</div>
+		</section>
+        <!-- Add_time Area -->
+
+        <section class="contact-us section">
+			<div class="container">
+				<div class="inner">
+                    <div class="doctor-calendar-area">
+                        <div class="doctor-calendar-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>HEURE</th>
+                                        <th>Action</th> <!-- New column for the delete button -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for entry in data %}
+                                        <tr id="{{ loop.index }}">
+                                            <td rowspan="{{ entry.times|length }}">{{ entry.date }}</td>
+                                            <td>{{ entry.times[0] }}</td>
+                                            <td>
+                                                <button onclick="deleteRow('{{ entry.date }}', '{{ entry.times[0] }}')">Supprimer</button>
+                                            </td>
+                                        </tr>
+                                        {% for time in entry.times[1:] %}
+                                            <tr>
+                                                <td>{{ time }}</td>
+                                                <td>
+                                                    <button onclick="deleteRow('{{ entry.date }}', '{{ time }}')">Supprimer</button>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© 2024 Medi Psychiatrie |  Tous droits réservés. <a href="" target="_blank"></a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+
+        <script>
+            function deleteRow(date, time) {
+                if (confirm('Are you sure you want to delete this entry?')) {
+                    // Send AJAX request to delete the row from Firestore
+                    fetch('/delete', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            date: date,
+                            time: time
+                        })
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            // If deletion is successful, remove the row from the table
+							location.reload();
+                            const row = document.getElementById(date);
+                            row.remove();
+							
+                        } else {
+                            // If deletion fails, display the error message
+                            response.json().then(data => {
+                                alert(data.error || 'Error deleting row!');
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('deleted successfully');
+                        location.reload();
+                    });
+                }
+            }
+        </script>
+		<script>
+			// Fonction pour obtenir la date actuelle au format YYYY-MM-DD
+			function getCurrentDate() {
+			  var now = new Date();
+			  var year = now.getFullYear();
+			  var month = String(now.getMonth() + 1).padStart(2, '0');
+			  var day = String(now.getDate()).padStart(2, '0');
+			  return year + '-' + month + '-' + day;
+			}
+			
+			// Fonction pour obtenir l'heure actuelle au format HH:MM
+			function getCurrentTime() {
+			  var now = new Date();
+			  var hour = String(now.getHours()).padStart(2, '0');
+			  var minute = String(now.getMinutes()).padStart(2, '0');
+			  return hour + ':' + minute;
+			}
+			
+			// Définir la valeur minimale pour l'élément input de date sur la date actuelle
+			document.getElementById('date').setAttribute('min', getCurrentDate());
+			
+			// Définir la valeur minimale pour l'élément input de temps sur la valeur actuelle, 
+			// puis autoriser toute heure/minute passée en fonction de la date sélectionnée.
+			document.getElementById('time').addEventListener('input', function() {
+			  var currentDate = document.getElementById('date').value;
+			  var currentTime = getCurrentTime();
+			  var selectedTime = this.value;
+			  if (currentDate === getCurrentDate()) {
+				this.setAttribute('min', currentTime);
+			  } else {
+				this.removeAttribute('min');
+			  }
+			});
+		</script>
+
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+	</body>
+</html>

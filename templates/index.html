@@ -1,0 +1,779 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>MediPsychiatrie</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+		
+    </head>
+    <body>
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+							<!-- Top -->
+							<ul class="top-contact">
+								<li><i class="fa fa-pause"></i><a href="{{ url_for('index') }}">Vous êtes patient</a></li>
+								<li><i class="fa fa-play"></i><a href="{{ url_for('doctor') }}">Vous êtes psychiatre</a></li>
+								<li style="margin-left: 700px;"><a href="{{ url_for('static', filename='img/Aide.mp4') }}" class="video video-popup mfp-iframe"><i class="fa fa-question-circle"></i>Aide</a></li>
+							</ul>
+							<!-- End Top -->
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="{{ url_for('index') }}">Accueil</a></li>
+											<li><a href="{{ url_for('doc') }}">Médecins </a></li>
+											<li><a href="#service">Services </a></li>
+											<li><a href="{{ url_for('blog') }}">Blogs</a></li>
+											<li><a href="{{ url_for('contact') }}">Contactez-nous</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									{% if email %}
+										<p style="color: black; margin-left: -20px;">{{ email }}</p>
+									{% else %}
+										<a href="{{ url_for('loginPatient') }}" class="btn">Connexion</a>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Slider Area -->
+		<section class="slider">
+			<div class="hero-slider">
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image: url('{{ url_for('static', filename='img/slider2.jpg') }}'); width: ;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>Nous fournissons des services <span>médicaux</span> auxquels vous pouvez faire <span>confiance !</span></h1>
+									<p>Nous sommes fiers de fournir des services psychiatriques de confiance, axés sur la qualité, la compassion et l'expertise.  </p>
+									<div class="button">
+										{% if email %}
+											<a href="{{ url_for('rendez_vous') }}" class="btn">Obtenir un rendez-vous</a>
+											<a href="{{ url_for('chat') }}" class="btn primary">Chatbot</a>
+										{% else %}
+											<a href="{{ url_for('loginPatient') }}" class="btn">Obtenir un rendez-vous</a>
+											<a href="{{ url_for('loginPatient') }}" class="btn primary">Chatbot</a>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image: url('{{ url_for('static', filename='img/slider.jpg') }}');">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>Nous fournissons des services <span>médicaux</span> auxquels vous pouvez faire <span>confiance !</span></h1>
+									<p>Votre bien-être et votre confidentialité sont notre priorité absolue </p>
+									<div class="button">
+										{% if email %}
+											<a href="{{ url_for('rendez_vous') }}" class="btn">Obtenir un rendez-vous</a>
+											<a href="{{ url_for('chat') }}" class="btn primary">Chatbot</a>
+										{% else %}
+											<a href="{{ url_for('loginPatient') }}" class="btn">Obtenir un rendez-vous</a>
+											<a href="{{ url_for('loginPatient') }}" class="btn primary">Chatbot</a>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start End Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image: url('{{ url_for('static', filename='img/slider3.jpg') }}');">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>Nous fournissons des services <span>médicaux</span> auxquels vous pouvez faire <span>confiance !</span></h1>
+									<p>Notre objectif est de vous aider à atteindre des résultats durables et significatifs dans votre parcours de santé mentale </p>
+									<div class="button">
+										{% if email %}
+											<a href="{{ url_for('rendez_vous') }}" class="btn">Obtenir un rendez-vous</a>
+											<a href="{{ url_for('chat') }}" class="btn primary">Chatbot</a>
+										{% else %}
+											<a href="{{ url_for('loginPatient') }}" class="btn">Obtenir un rendez-vous</a>
+											<a href="{{ url_for('loginPatient') }}" class="btn primary">Chatbot</a>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+		<!-- Start Schedule Area -->
+		<section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+							<!-- single-schedule -->
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa fa-ambulance"></i>
+									</div>
+									<div class="single-content">
+										<span>Urgence</span>
+										<h4>Consultations d'Urgence</h4>
+										<p>Disponible 24/7, y compris les jours fériés. En cas de crise ou de besoin urgent, notre équipe est prête à vous aider à tout moment.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<span>Services</span>
+										<h4>Services en Ligne</h4>
+										<p>Nos services de consultation en ligne sont disponibles selon les horaires de jour et de nuit mentionnés. Vous pouvez planifier une consultation en ligne à tout moment qui vous convient.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule last">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-ui-clock"></i>
+									</div>
+									<div class="single-content">
+										<span>Heures d’ouverture</span>
+										<h4>Consultations de Jour</h4>
+										<ul class="time-sidual">
+											<li class="day">Samedi - Jeudi<span>8h00 - 18h00</span></li>
+											<li class="day">Vendredi<span>9h00 - 14h00</span></li>
+										</ul>
+										<h4>Consultations Nocturnes</h4>
+										<ul class="time-sidual">
+											<li class="day">Samedi - Jeudi<span>18h00 - 23h00</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/End Start schedule Area -->
+
+		<!-- Start Feautes -->
+		<section class="Feautes section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Nous sommes toujours prêts à vous aider, vous & votre famille</h2>
+							<img src="{{ url_for('static', filename='img/section-img.png') }}" alt="#">
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont-phone"></i>
+							</div>
+							<h3>Aide d’urgence</h3>
+							<p>En période de crise ou de besoin urgent, nous sommes là pour vous offrir un soutien immédiat et professionnel. Que vous ou un membre de votre famille traversiez une situation difficile, une crise émotionnelle ou un stress important, notre équipe est disponible pour vous aider à tout moment.</p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont-read-book"></i>
+							</div>
+							<h3>Éducation et Sensibilisation</h3>
+							<p>Nous croyons en l'importance de l'éducation et de la sensibilisation en matière de santé mentale. Nous offrons des ressources éducatives et des programmes de sensibilisation pour vous aider, ainsi que votre famille, à mieux comprendre les troubles mentaux et à promouvoir un environnement de soutien et de compréhension.</p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features last">
+							<div class="signle-icon">
+								<i class="icofont-pills"></i>
+							</div>
+							<h3>Traitement médical</h3>
+							<p>Nous offrons une gamme complète de services de traitement médical pour répondre à une variété de besoins en santé mentale. Nos psychiatres, thérapeutes et experts en santé mentale travailleront avec vous et votre famille pour élaborer un plan de traitement personnalisé qui répond à vos besoins spécifiques.</p>
+						</div>
+						<!-- End Single features -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Feautes -->
+		
+		<!-- Start Why choose -->
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Nous offrons différents services pour améliorer votre santé</h2>
+							<img src="{{ url_for('static', filename='img/section-img.png') }}" alt="#">
+							<p>Nous sommes une équipe dédiée de professionnels de la santé mentale, engagés à fournir des soins de qualité et accessibles à tous ceux qui en ont besoin</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Left -->
+						<div class="choose-left">
+							<h3>Qui sommes-nous ?</h3>
+							<p>Notre mission est de promouvoir la santé mentale et le bien-être pour tous en offrant des services de consultation, de thérapie et de soutien qui sont à la fois professionnels et compatissants. Nous nous engageons à aider nos patients à surmonter les défis de la vie, à développer des stratégies de gestion efficaces et à mener une vie équilibrée et épanouie.</p>
+							<p>Nos psychiatres, psychologues et thérapeutes sont des experts qualifiés et expérimentés dans le domaine de la santé mentale. Chaque membre de notre équipe est passionné par son travail et dévoué à fournir les meilleurs soins possibles. Nous croyons en une approche collaborative, travaillant ensemble pour créer un plan de traitement personnalisé pour chaque patient.</p>
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>Compassion. </li>
+										<li><i class="fa fa-caret-right"></i>Confidentialité.</li>
+										<li><i class="fa fa-caret-right"></i>Accessibilité.</li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>Consultations Psychiatriques. </li>
+										<li><i class="fa fa-caret-right"></i>Thérapie et Counseling.</li>
+										<li><i class="fa fa-caret-right"></i>Soutien en Ligne.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End Choose Left -->
+					</div>
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Rights -->
+						<div class="choose-right">
+							<div class="video-image">
+								<!-- Video Animation -->
+								<div class="promo-video">
+									<div class="waves-block">
+										<div class="waves wave-1"></div>
+										<div class="waves wave-2"></div>
+										<div class="waves wave-3"></div>
+									</div>
+								</div>
+								<!--/ End Video Animation -->
+								<a href="{{ url_for('static', filename='img/Vidéo.mp4') }}" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+							</div>
+						</div>
+						<!-- End Choose Rights -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Why choose -->
+		
+		<!-- Start service -->
+		<section id="service" class="services section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Nous offrons différents services pour améliorer votre santé</h2>
+							<img src="{{ url_for('static', filename='img/section-img.png') }}" alt="#">
+							<p>Chez nous, nous comprenons l'importance de prendre soin de votre santé mentale. C'est pourquoi nous proposons une gamme complète de services conçus pour répondre à vos besoins individuels et vous aider à retrouver votre bien-être émotionnel. Voici un aperçu de nos services: </p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-headphone-alt"></i>
+							<h4><a>Consultations Psychiatriques en Ligne</a></h4>
+							<p>Accédez à des consultations individuelles avec nos psychiatres qualifiés, où vous pouvez discuter de vos préoccupations, recevoir un diagnostic précis et élaborer un plan de traitement adapté à vos besoins. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-brain-alt"></i>
+							<h4><a>Thérapie et Counseling</a></h4>
+							<p>Bénéficiez d'une variété de thérapies, y compris la thérapie cognitivo-comportementale (TCC), la thérapie interpersonnelle (TIP), et la thérapie de soutien, pour vous aider à développer des stratégies pour faire face aux défis de la vie quotidienne. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-capsule"></i>
+							<h4><a>Gestion des Médicaments</a></h4>
+							<p>Pour ceux qui nécessitent une pharmacothérapie, nos psychiatres peuvent prescrire et surveiller les médicaments appropriés pour traiter efficacement les troubles mentaux, tout en tenant compte de vos besoins individuels. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-paper"></i>
+							<h4><a>Évaluations Psychiatriques Complètes</a></h4>
+							<p>Nos psychiatres effectuent des évaluations approfondies pour diagnostiquer et comprendre vos troubles mentaux, en utilisant des méthodes éprouvées et des outils d'évaluation modernes. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-book"></i>
+							<h4><a>Éducation et Sensibilisation</a></h4>
+							<p>Nous fournissons des ressources éducatives et des informations pour vous aider à mieux comprendre vos troubles mentaux, ainsi que des conseils pour prendre des mesures positives pour votre bien-être mental. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-holding-hands"></i>
+							<h4><a>Soutien en Cas de Crise</a></h4>
+							<p>En cas de besoin urgent, notre équipe est disponible pour fournir un soutien immédiat et des conseils pour gérer la crise de manière appropriée. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End service -->
+		
+		<!-- Pricing Table -->
+		<section class="pricing-table section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Nous vous fournissons le meilleur traitement à un prix raisonnable</h2>
+							<img src="{{ url_for('static', filename='img/section-img.png') }}" alt="#">
+							<p>Chez nous, nous croyons que tout le monde mérite un accès à des soins de santé mentale de qualité, sans que cela ne pèse lourdement sur leur budget</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont-chat"></i>
+								</div>
+								<h4 class="title">Chatbot</h4>
+								<div class="price">
+									<p class="amount">Gratuit</p>
+								</div>	
+							</div>
+							<!-- Table List -->
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Réponses Personnalisées</li>
+								<li><i class="icofont icofont-ui-check"></i>Ressources Utiles</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Consultation en Ligne</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Flexibilité d'Horaires</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Accessibilité 24/7</li>
+							</ul>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont-sun"></i>
+								</div>
+								<h4 class="title">Consultation</h4>
+								<div class="price">
+									<p class="amount">2000 DZD<span>/ Par visite</span></p>
+								</div>	
+							</div>
+							<!-- Table List -->
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Réponses Personnalisées</li>
+								<li><i class="icofont icofont-ui-check"></i>Ressources Utiles</li>
+								<li><i class="icofont icofont-ui-check"></i>Consultation en Ligne</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Flexibilité d'Horaires</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Accessibilité 24/7</li>
+							</ul>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont-moon"></i>
+								</div>
+								<h4 class="title">Consultation nocturne.</h4>
+								<div class="price">
+									<p class="amount">3000 DZD<span>/ Par visite</span></p>
+								</div>	
+							</div>
+							<!-- Table List -->
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Réponses Personnalisées</li>
+								<li><i class="icofont icofont-ui-check"></i>Ressources Utiles</li>
+								<li><i class="icofont icofont-ui-check"></i>Consultation en Ligne</li>
+								<li><i class="icofont icofont-ui-check"></i>Flexibilité d'Horaires</li>
+								<li><i class="icofont icofont-ui-check"></i>Accessibilité 24/7</li>
+							</ul>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+				</div>	
+			</div>	
+		</section>	
+		<!--/ End Pricing Table -->
+		
+		<!-- Start clients -->
+		<div class="clients overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<div class="owl-carousel clients-slider">
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client1.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client2.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client3.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client4.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client5.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client1.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client2.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client3.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client4.png') }}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{{ url_for('static', filename='img/client5.png') }}" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/Ens clients -->
+		
+		<!-- Start Blog Area -->
+		<section class="blog section" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Restez au courant de nos dernières nouvelles médicales</h2>
+							<img src="{{ url_for('static', filename='img/section-img.png') }}" alt="#">
+							<p>Nous nous engageons à vous fournir les informations les plus récentes et pertinentes en matière de santé mentale</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{{ url_for('static', filename='img/blog1.jpg') }}" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">3 août 2005</div>
+									<h2><a href="{{ url_for('blog') }}">L’avenir de la psychiatrie</a></h2>
+									<p class="text">Apollon, Bergeron et Cantin présentent leur texte comme un « argument ». Pourtant, les auteurs y suivent une démarche inverse à celle typique d’un argument.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{{ url_for('static', filename='img/blog2.jpg') }}" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">17 mai 2017</div>
+									<h2><a href="{{ url_for('blog2') }}">Dès sa construction, la psychiatrie...</a></h2>
+									<p class="text">La psychiatrie a toujours été une médecine spéciale. Elle fait pleinement partie de la médecine.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{{ url_for('static', filename='img/blog3.jpg') }}" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">Février 2019</div>
+									<h2><a href="{{ url_for('blog4') }}">La psychiatrie : nouveaux défis</a></h2>
+									<p class="text">La psychiatrie doit également tenir compte des attentes qui se posent à son égard du côté des systèmes de soins. D’un point de vue de santé publique.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Blog Area -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Qui sommes-nous</h2>
+								<p>Bienvenue chez Medi Psychiatrie, votre partenaire en santé mentale. Nous offrons des soins de qualité et accessibles pour atteindre un bien-être optimal avec des services spécialisés et un soutien personnalisé.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Liens Rapides</h2><br>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Accueil</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Nos Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Rendez-Vous</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>À Propos</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Politique</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Heures d’ouverture</h2>
+								<p>Voici nos horaires d'ouverture pour nos services de consultation :</p><br>
+								<ul class="time-sidual">
+									<li class="day">Samedi - Jeudi<span>8h00 - 18h00</span></li>
+									<li class="day">Vendredi<span>9h00 - 14h00</span></li>
+									<li class="day">Samedi - Jeudi<span>18h00 - 23h00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Medi Psychiatrie</h2>
+								<p>Votre partenaire de confiance en santé mentale.</p><br><br>
+								<ul class="single-footer">
+									<li><i class="fa fa-phone"></i>  +213 05 55 43 26 16</li>
+									<li><i class="fa fa-envelope"></i>   medi.psychiatre@gmail.com</li>
+									<li><i class="fa fa-map-marker"></i>   Route de Sidi Achour, Annaba, Algérie</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© 2024 Medi Psychiatrie |  Tous droits réservés. <a href="" target="_blank"></a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

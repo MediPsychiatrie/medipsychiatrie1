@@ -1,0 +1,389 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>MediPsychiatrie - Chatbot</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/pay.css') }}">
+		
+    </head>
+    <body>
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->		
+		<header class="header" >	
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="{{ url_for('rendez_vous') }}"><i class="icofont-long-arrow-left fa-4x" style="color: #1A76D1;"></i></a>
+									<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+
+		<!-- Start Contact Us -->
+		<section class="contact-us section">
+			<div class="container">
+				<div class="inner">
+					<div class="row"> 
+						<div class="col-lg-6">
+							<div class="contact-us-form">
+								<div>
+									<h2>{{ doctor_details.name }}</h2>
+									<h6>{{ amount }}</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="contact-us-form">
+								<div class="row">
+									{% for item in data %}
+										<div class="col-lg-12">
+											<hr> <!-- Add a horizontal line here -->
+											<h6>{{ item.date }}</h6>
+										</div>
+										{% for appointment in item.appointments %}
+											<div class="col-lg-6">
+												<div class="form-group login-btn">
+													<button class="btn" type="submit" data-toggle="modal" data-target="#staticBackdrop"> {{ appointment.time }}</button>Prix: {{ appointment.amount }}
+												</div>
+											</div>
+										{% endfor %}
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--/ End Contact Us -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="tabs mt-3">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="visa-tab" data-toggle="tab" href="#cib" role="tab" aria-controls="cib" aria-selected="true">
+										<img src="{{ url_for('static', filename='img/cib.png') }}" width="80">
+									</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="paypal-tab" data-toggle="tab" href="#edahabiya" role="tab" aria-controls="paypal" aria-selected="false">
+										<img src="{{ url_for('static', filename='img/edahabiya.png') }}" width="80">
+									</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="cib" role="tabpanel" aria-labelledby="visa-tab">
+									<div class="mt-4 mx-4">
+										<div class="text-center">
+											<h5>Credit card</h5>
+										</div>
+										<div class="form mt-3">
+											<div class="inputbox">
+												<input type="text" name="name" class="form-control" placeholder="Nom Prénom" required="required">
+											</div>
+											<div class="inputbox">
+												<input type="text" name="name" min="1" max="999" class="form-control" placeholder="Numéro de votre carte CIB" required="required">
+											</div>
+											<div class="d-flex flex-row">
+												<div class="inputbox">
+													<input type="text" name="name" min="1" max="999" class="form-control" placeholder="Date d'Expiration" required="required">
+												</div>
+												<div class="inputbox">
+													<input type="text" name="name" min="1" max="999" class="form-control" placeholder="CVV2" required="required">
+												</div>
+											</div>
+											<div class="px-5 pay">
+												<button class="btn btn-primary btn-block">Payer</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="edahabiya" role="tabpanel" aria-labelledby="paypal-tab">
+									<div class="px-5 mt-5">
+										<div class="inputbox">
+											<input type="text" name="name" class="form-control" placeholder="Nom Prénom" required="required">
+										</div>
+										<div class="inputbox">
+											<input type="text" name="name" min="1" max="999" class="form-control" placeholder="Numéro de votre carte CIB" required="required">
+										</div>
+										<div class="d-flex flex-row">
+											<div class="inputbox">
+												<input type="text" name="name" min="1" max="999" class="form-control" placeholder="Date d'Expiration" required="required">
+											</div>
+											<div class="inputbox">
+												<input type="text" name="name" min="1" max="999" class="form-control" placeholder="CVC2/CVV2" required="required">
+											</div>
+										</div>
+										<div class="pay px-5">
+											<button class="btn btn-primary btn-block">Payer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Modal -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Qui sommes-nous</h2>
+								<p>Bienvenue chez Medi Psychiatrie, votre partenaire en santé mentale. Nous offrons des soins de qualité et accessibles pour atteindre un bien-être optimal avec des services spécialisés et un soutien personnalisé.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Liens Rapides</h2><br>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Accueil</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Nos Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Rendez-Vous</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>À Propos</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Politique</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Heures d’ouverture</h2>
+								<p>Voici nos horaires d'ouverture pour nos services de consultation :</p><br>
+								<ul class="time-sidual">
+									<li class="day">Samedi - Jeudi<span>8h00 - 18h00</span></li>
+									<li class="day">Vendredi<span>9h00 - 14h00</span></li>
+									<li class="day">Samedi - Jeudi<span>18h00 - 23h00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Medi Psychiatrie</h2>
+								<p>Votre partenaire de confiance en santé mentale.</p><br><br>
+								<ul class="single-footer">
+									<li><i class="fa fa-phone"></i>  +213 05 55 43 26 16</li>
+									<li><i class="fa fa-envelope"></i>   medi.psychiatre@gmail.com</li>
+									<li><i class="fa fa-map-marker"></i>   Route de Sidi Achour, Annaba, Algérie</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© 2024 Medi Psychiatrie |  Tous droits réservés. <a href="" target="_blank"></a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+
+		<script>
+			$(document).ready(function() {
+				const peer = new SimplePeer({ initiator: location.hash === '#init', trickle: false })
+		
+				// Gestion de la signalisation
+				peer.on('signal', data => {
+					$('#startCall').click(function() {
+						const code = prompt('Copiez le code et envoyez-le à votre interlocuteur :', JSON.stringify(data))
+						peer.signal(JSON.parse(code))
+					})
+				})
+		
+				// Gestion de la connexion établie
+				peer.on('connect', () => {
+					console.log('Connexion établie !');
+				})
+		
+				// Gestion du flux vidéo
+				peer.on('stream', stream => {
+					const video = document.createElement('video')
+					document.getElementById('videoContainer').appendChild(video)
+		
+					video.srcObject = stream
+					video.play()
+				})
+		
+				// Gestion des erreurs
+				peer.on('error', err => {
+					console.error('Erreur de connexion :', err)
+				})
+		
+				// Lorsque l'utilisateur clique sur le bouton "Payer"
+				$('#startCall').click(function() {
+					navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+						.then(stream => {
+							// Afficher votre propre flux vidéo
+							const video = document.createElement('video')
+							document.getElementById('videoContainer').appendChild(video)
+							video.srcObject = stream
+							video.play()
+		
+							// Connecter avec un pair distant
+							peer.addStream(stream)
+						})
+						.catch(err => {
+							console.error('Erreur de capture vidéo/son :', err)
+						})
+				})
+			})
+		</script>
+		
+
+		<script src="https://cdn.peerjs.com/1.3.1/peerjs.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.5.1/adapter.min.js"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/simple-peer/simplepeer.min.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

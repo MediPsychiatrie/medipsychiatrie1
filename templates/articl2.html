@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>MediPsychiatrie - Blog</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+							<!-- Top -->
+							<ul class="top-contact">
+								<li><i class="fa fa-pause"></i><a href="{{ url_for('index') }}">Vous êtes patient</a></li>
+								<li><i class="fa fa-play"></i><a href="{{ url_for('doctor') }}">Vous êtes psychiatre</a></li>
+							</ul>
+							<!-- End Top -->
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li><a href="{{ url_for('index') }}">Accueil</a></li>
+											<li><a href="{{ url_for('doc') }}">Médecins </a></li>
+											<li><a href="{{ url_for('index') }}#service">Services </a></li>
+											<li class="active"><a href="{{ url_for('blog') }}">Blogs</a></li>
+											<li><a href="{{ url_for('contact') }}">Contactez-nous</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									{% if email %}
+										<p style="color: black; margin-left: -20px;">{{ email }}</p>
+									{% else %}
+										<a href="{{ url_for('loginPatient') }}" class="btn">Connexion</a>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Dès sa construction...</h2>
+							<ul class="bread-list">
+								<li><a href="{{ url_for('index') }}">Accueil</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">Dès sa construction...</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+		
+		<!-- Single News -->
+		<section class="news-single section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- News Head -->
+									<div class="news-head">
+										<img src="{{ url_for('static', filename='img/blog1.jpg') }}" alt="#">
+									</div>
+									<!-- News Title -->
+									<h1 class="news-title">Dès sa construction, la psychiatrie a eu une ambition scientifique de compréhension du fonctionnement du cerveau</h1>
+									<!-- Meta -->
+									<div class="meta">
+										<div class="meta-left">
+											<span class="author"><a href="#"><img src="{{ url_for('static', filename='img/author1.jpg') }}" alt="#">Gary Drechou</a></span>
+											<span class="date"><i class="fa fa-clock-o"></i>2017</span>
+										</div>
+										<div class="meta-right">
+											<span class="views"><i class="fa fa-eye"></i>17K</span>
+										</div>
+									</div>
+									<!-- News Text -->
+									<div class="news-text">
+                                        <p><strong>Pourquoi la psychiatrie est-elle vue comme «un cas à part» dans la médecine?</strong></p>
+										<p>La psychiatrie a toujours été une médecine spéciale. Elle fait pleinement partie de la médecine puisqu’elle s’occupe de pathologies, de maladies, et en même temps elle n’est pas comme le reste de la médecine. Quand on se casse un bras, il y a une lésion clairement indentifiable, on la soigne, et le bras est réparé, peu importe que l’on soit riche, pauvre, musulman ou catholique. En psychiatrie, on peut certes identifier un certain nombre de maladies – schizophrénie, dépression, troubles bipolaires –, mais leur expression varie selon le contexte. La pathologie mentale est «spéciale» dans le sens où elle touche l’être humain dans ce qu’il a de plus humain, dans son intentionnalité, son désir, sa volonté, ses croyances – bref, dans sa subjectivité. Or, un os n’a pas de subjectivité. Un cœur peut-être, mais c’est plus compliqué! On a donc vraiment ces deux aspects: la biologie d’une part, qui nous rattache complètement à la médecine – les psychiatres font des études de médecine, puis une spécialité –, et d’autre part cette subjectivité, qui nous distingue complètement du reste de la médecine.</p>
+										<p><strong>qui explique que les psychiatres eux-mêmes soient parfois enclins à se situer «hors de la science»?</strong></p>
+										<p>Oui, sans doute. Le Département de psychiatrie du CHUV, pour prendre cet exemple, n’existe que depuis 15 ans. Avant, il n’était pas seulement une spécialité à part, mais une institution à part, avec, en son sein, des barrières assez marquées. Lorsqu’on a eu cette réflexion qui nous a amenés à décider qu’il fallait qu’on soit dans le CHUV, avec les autres médecins, il y a eu chez la plupart des psychiatres une fierté d’être rattaché à quelque chose de plus grand, au milieu universitaire, et, pour d’autres, ce sentiment de vendre son âme au somatique, de laisser de côté toutes ces spécificités. Encore aujourd’hui, même si l’intégration s’est plutôt bien passée et que nous travaillons à casser encore davantage les barrières entre la psychiatrie de l’enfant et de l’adolescent, la psychiatrie de l’adulte et la psychiatrie de la personne âgée, un certain nombre de personnes peuvent me dire que nous travaillerions mieux «dans notre coin», que l’on devrait s’occuper de cette médecine spéciale, mais en insistant plus sur la dimension «spéciale» que sur la «médecine».</p>
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="{{ url_for('static', filename='img/blog2.jpg') }}" alt="#">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="{{ url_for('static', filename='img/blog3.jpg') }}" alt="#">
+													</div>
+												</div>
+											</div>
+										</div>
+										<p><strong>On a pourtant le sentiment, depuis quelques années, notamment avec l’essor des neurosciences, que la psychiatrie s'intéresse de plus en plus aux fondements biologiques des dysfonctionnements? Est-ce qu'il y a un virage en ce sens?</strong></p>
+                                        <p>Le virage, c’est la constitution même de la psychiatrie comme une branche de la médecine, au début du XIXe siècle! Dès sa construction, la psychiatrie a eu une ambition scientifique de compréhension du fonctionnement du cerveau. L’isolement dans les asiles psychiatriques d’un certain nombre de personnes qui jusque-là étaient considérées comme des fous, ne visait pas à les exclure ou à s’en débarrasser, mais au contraire à les inclure dans la médecine, c’est-à-dire à mieux les comprendre et les suivre dans la durée. Le but était de pouvoir les incorporer à terme dans une société du dialogue. Toutes les classifications psychiatriques se sont constituées comme ça, par l’observation de ces personnes.</p>
+										<blockquote class="overlay">
+											<p>LA PSYCHIATRIE, C’EST D’ABORD UN ESSAI D’ENTRER EN COMMUNICATION AVEC DES ÊTRES HUMAINS QUI, EN APPARENCE, SONT TOUT À FAIT EN DEHORS DE LA COMMUNICATION.</p>					
+										</blockquote>
+										<p>Grâce à ces observations, on s’est rendu compte que même chez «les fous les plus fous», il y avait une communication possible.</p>
+										<p><strong>Pas de tournant récent, donc?</strong></p>
+                                        <p>Il y a quand même un moment intéressant, en 1822, où pour la première fois on identifie des troubles psychiatriques – des hallucinations – qui sont en rapport direct avec une affection cérébrale qu’on appelait à l’époque la paralysie générale, dont on apprend une centaine d’années plus tard que c’est la syphilis. Or, la syphilis tertiaire provoquait une encéphalite, une maladie somatique clairement identifiable du cerveau, qui provoquait des hallucinations. À ce moment-là, il y a eu énormément d’espoir. On s’est dit: «Ça y est, on a trouvé! Les maladies psychiatriques viennent de lésions du cerveau!» Le problème, c’est qu’ensuite, pendant des années, il n’y a plus eu d’autre découverte de ce type. Plus tard, il y a eu la maladie d’Alzheimer, où on avait de nouveau des pathologies cérébrales clairement identifiables qui donnaient des symptômes. Mais ce qui est intéressant, c’est que chaque fois qu’on trouvait une raison dans le cerveau d’avoir une pathologie, ça devenait de la neurologie, ça basculait du côté somatique. Et on est encore un peu là-dedans aujourd’hui.</p>
+                                        <p><strong>La psychiatrie serait-elle en passe de devenir une branche des neurosciences?</strong></p>
+                                        <p>Au fond, c’est le contraire: ce sont les neurosciences cliniques qui intègrent progressivement la psychiatrie. On a l’impression que les neurosciences sont quelque chose de très nouveau, mais on est vraiment dans une continuité. Les neurosciences nous permettent d’avoir des moyens d’analyse beaucoup plus avancés, et les nouveaux savoirs qui en résultent contribuent à la déstigmatisation des maladies mentales. C’est pour ça qu’au CHUV on a créé un Centre de neurosciences psychiatriques rattaché au Département de psychiatrie. Les recherches qui y sont menées sont passionnantes, car elles peuvent nous faire changer de point de vue. Nous sommes probablement dans une forme d’impasse par rapport à notre façon de comprendre le fonctionnement du cerveau, et c’est le moment de faire un pas à côté – ce qui est le plus difficile! En même temps, au quotidien, on s’occupe des patients et on a plutôt de bons résultats. Le public le sait peu, mais les psychothérapies, par exemple, sont parmi les traitements les plus efficaces de la médecine.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12">
+						<div class="main-sidebar">
+							<!-- Single Widget -->
+							<div class="single-widget search">
+								<div class="form">
+									<input type="email" placeholder="Search Here...">
+									<a class="button" href="#"><i class="fa fa-search"></i></a>
+								</div>
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget category">
+								<h3 class="title">Blog Categories</h3>
+								<ul class="categor-list">
+									<li><a>Men's Apparel</a></li>
+									<li><a>Women's Apparel</a></li>
+									<li><a>Bags Collection</a></li>
+									<li><a>Accessories</a></li>
+									<li><a>Sun Glasses</a></li>
+								</ul>
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget recent-post">
+								<h3 class="title">Recent post</h3>
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar1.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog') }}">L’avenir de la psychiatrie</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>3 août 2005</li>
+											<li><i class="fa fa-eye" aria-hidden="true"></i>33</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar2.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog3') }}">Mobiliser l’histoire pour mieux visibiliser les enjeux actuels de la recherche sur le cerveau.</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>2014</li>
+											<li><i class="fa fa-eye" aria-hidden="true"></i>2</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar3.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog4') }}">La psychiatrie : nouveaux défis.</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>Février 2019</li>
+											<li><i class="fa fa-eye" aria-hidden="true"></i>44</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget side-tags">
+								<h3 class="title">Tags</h3>
+								<ul class="tag">
+									<li><a>business</a></li>
+									<li><a>wordpress</a></li>
+									<li><a>html</a></li>
+									<li><a>multipurpose</a></li>
+									<li><a>education</a></li>
+									<li><a>template</a></li>
+									<li><a>Ecommerce</a></li>
+								</ul>
+							</div>
+							<!--/ End Single Widget -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Single News -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Qui sommes-nous</h2>
+								<p>Bienvenue chez Medi Psychiatrie, votre partenaire en santé mentale. Nous offrons des soins de qualité et accessibles pour atteindre un bien-être optimal avec des services spécialisés et un soutien personnalisé.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Liens Rapides</h2><br>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Accueil</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Nos Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Rendez-Vous</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>À Propos</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Politique</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Heures d’ouverture</h2>
+								<p>Voici nos horaires d'ouverture pour nos services de consultation :</p><br>
+								<ul class="time-sidual">
+									<li class="day">Samedi - Jeudi<span>8h00 - 18h00</span></li>
+									<li class="day">Vendredi<span>9h00 - 14h00</span></li>
+									<li class="day">Samedi - Jeudi<span>18h00 - 23h00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Medi Psychiatrie</h2>
+								<p>Votre partenaire de confiance en santé mentale.</p><br><br>
+								<ul class="single-footer">
+									<li><i class="fa fa-phone"></i>  +213 05 55 43 26 16</li>
+									<li><i class="fa fa-envelope"></i>   medi.psychiatre@gmail.com</li>
+									<li><i class="fa fa-map-marker"></i>   Route de Sidi Achour, Annaba, Algérie</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© 2024 Medi Psychiatrie |  Tous droits réservés. <a href="" target="_blank"></a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

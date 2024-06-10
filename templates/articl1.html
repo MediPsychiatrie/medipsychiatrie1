@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>MediPsychiatrie - Blog</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+							<!-- Top -->
+							<ul class="top-contact">
+								<li><i class="fa fa-pause"></i><a href="{{ url_for('index') }}">Vous êtes patient</a></li>
+								<li><i class="fa fa-play"></i><a href="{{ url_for('doctor') }}">Vous êtes psychiatre</a></li>
+							</ul>
+							<!-- End Top -->
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li><a href="{{ url_for('index') }}">Accueil</a></li>
+											<li><a href="{{ url_for('doc') }}">Médecins </a></li>
+											<li><a href="{{ url_for('index') }}#service">Services </a></li>
+											<li class="active"><a href="{{ url_for('blog') }}">Blogs</a></li>
+											<li><a href="{{ url_for('contact') }}">Contactez-nous</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									{% if email %}
+										<p style="color: black; margin-left: -20px;">{{ email }}</p>
+									{% else %}
+										<a href="{{ url_for('loginPatient') }}" class="btn">Connexion</a>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>L’avenir de la psychiatrie : la recherche scientifique</h2>
+							<ul class="bread-list">
+								<li><a href="{{ url_for('index') }}">Accueil</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">L’avenir de la psychiatrie : la recherche scientifique</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+		
+		<!-- Single News -->
+		<section class="news-single section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- News Head -->
+									<div class="news-head">
+										<img src="{{ url_for('static', filename='img/blog1.jpg') }}" alt="#">
+									</div>
+									<!-- News Title -->
+									<h1 class="news-title">L’avenir de la psychiatrie : la recherche scientifique</h1>
+									<!-- Meta -->
+									<div class="meta">
+										<div class="meta-left">
+											<span class="author"><a href="#"><img src="{{ url_for('static', filename='img/author1.jpg') }}" alt="#">Philippe Robaey et Sonia Mansour-Robaey</a></span>
+											<span class="date"><i class="fa fa-clock-o"></i>3 août 2005</span>
+										</div>
+										<div class="meta-right">
+											<span class="views"><i class="fa fa-eye"></i>33K</span>
+										</div>
+									</div>
+									<!-- News Text -->
+									<div class="news-text">
+										<p>Apollon, Bergeron et Cantin présentent leur texte comme un « argument ». Pourtant, les auteurs y suivent une démarche inverse à celle typique d’un argument. Un argument établit ses prémisses sur des faits ou des concepts véridiques pour émettre ensuite des hypothèses générales ou des jugements. Mais les auteurs énoncent d’emblée un jugement de valeur : les psychiatres devront choisir entre la clinique et la science. Ils consacrent ensuite plus des deux tiers de leur texte à la critique de la psychiatrie scientifique pour ne présenter leur approche clinique que brièvement et à la fin du texte. En l’absence de toute référence bibliographique, nous ne pouvons qu’assumer que les auteurs se fondent uniquement sur leur pratique clinique.</p>
+										<p>Leurs constats sont les suivants : i: la psychiatrie biologique et les neurosciences ont des limites fondées sur l’écart « incomblable » entre la représentation que nous nous faisons de la réalité et la réalité elle-même, ii: la psychiatrie doit sauvegarder une approche thérapeutique fondée sur l’éthique du sujet dont la part la plus significative sur le plan clinique est inaccessible à la démarche scientifique et en conséquence, iii: la psychiatrie doit choisir entre la science et la clinique.</p>
+										<p>Nous rappelons que ce qu’ils appellent une « éthique du sujet » fut en fait à l’origine un projet épistémologique du sujet élaboré à la fin du xixe siècle pour doter la psychologie, encore dépendante de la philosophie et de la métaphysique, du statut d’une science. Dans ce contexte, la psychanalyse Freudienne se développe comme une approche scientifique influencée par les sciences sociales et qui ne deviendra un projet épistémologique du sujet que dans le cadre de la pratique clinique (Farr, 1996). Quant à la psychanalyse Lacanienne, elle s’est développée, de manière similaire, sous l’impulsion de l’approche structuraliste du langage. Mais alors que ces deux courants étaient bien intégrés dans les connaissances établies de leur époque, Apollon et collaborateurs nous proposent aujourd’hui un divorce entre l’approche clinique en psychiatrie et les connaissances scientifiques actuelles : il faut choisir entre la science et la clinique.</p>
+										<p>La psychiatrie scientifique intégrée aux connaissances actuelles repose en effet sur plusieurs disciplines scientifiques, biologiques, humaines ou sociales, qui sont postérieures à la psychanalyse et qui génèrent constamment des connaissances nouvelles se prêtant à des évaluations objectives. Parce que les phénomènes mentaux relèvent à la fois du biologique, du psychologique et du social, nous entendons par évaluation objective, toutes les confirmations ou infirmations convergentes de la thérapie, effectuées par des personnes tierces — autres que le patient et le soignant — à plusieurs niveaux d’organisation : tests standardisés psychologiques et comportementaux, évaluations familiale et sociale, réponses à une thérapie médicamenteuse, résultats de mesure en imagerie structurale ou fonctionnelle, etc. Le développement de ces sciences change inéluctablement la conceptualisation des phénomènes mentaux, leur explication et leur prise en charge, et les approches psychanalytiques semblent céder le pas à ces nouvelles alternatives. La psychanalyse, auto-référentielle et fondée sur la subjectivité, ne semble en effet pas vouloir ou pouvoir se prêter à de telles évaluations objectives.</p>
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="{{ url_for('static', filename='img/blog2.jpg') }}" alt="#">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="{{ url_for('static', filename='img/blog3.jpg') }}" alt="#">
+													</div>
+												</div>
+											</div>
+										</div>
+										<p>Affirmer que l’approche scientifique en psychiatrie est par essence limitée quant au traitement des troubles mentaux graves découle d’une mauvaise compréhension de cette approche. L’épistémologie du sujet qui est alors proposée se base sur l’ignorance comme prémisse, en assumant d’emblée que nous ignorerons toujours l’essentiel de cette dimension globale du mental qui est le sujet, parce qu’elle « dépasse les moyens de la raison ou les possibilités de la pensée ». Ce genre d’affirmation se fonde aussi sur la perception réductrice que la dimension scientifique de la psychiatrie réside dans la prescription. Or, même si le médicament repose sur une certaine conceptualisation du mental, il ne constitue en aucun cas, à lui seul, une explication. Les médicaments sont mis au marché après un long processus scientifique, juridique, économique et social. Mais la découverte et l’évaluation de l’efficacité thérapeutique des médicaments sont des processus scientifiques. Le champ des neurosciences qui a connu des développements majeurs ces vingt dernières années constitue le fond conceptuel et explicatif de ce processus scientifique. Mais le psychiatre prescripteur n’a, lors de sa formation, qu’un trop court aperçu du bagage théorique qui constitue l’arrière-fond des approches scientifiques. De ce fait, les médicaments psychotropes, avec leurs mécanismes d’action, se positionnent non seulement comme une approche thérapeutique mais aussi comme une explication du mental, une alternative théorique à la psychanalyse remplaçant le sujet par la chimie de son cerveau. Or, toute maladie appelant une étiologie, des mécanismes, un contexte personnel et social et une évolution complexe, il n’est pas étonnant que des psychiatres trouvent les approches thérapeutiques médicamenteuses limitées du point de vue explicatif, surtout quand elles sont offertes comme unique alternative pour des troubles mentaux graves.</p>
+										<blockquote class="overlay">
+											<p>C’est une situation dangereuse et préoccupante car elle dépossède le psychiatre d’un champ théorique explicatif, qui fut majoritairement, jusqu’il y a peu, celui de la psychanalyse, pour l’ancrer dans une pratique dépourvue de champ théorique connaissable. La transmission du savoir dans le domaine devient alors tributaire d’un processus qui se méfie de l’approche scientifique et dans lequel ce qui est important est de regarder faire et d’imiter, mais sans fonder la pratique sur un champ de connaissances théoriques (Mansour-Robaey et Robaey, 2003).</p>					
+										</blockquote>
+										<p>Dans un livre récent, Lauren Slater (2004) relate comment elle a répété les expériences de David Rosenhan qui, dans les années soixante-dix, avec sept de ses amis, s’étaient présentés dans huit services psychiatriques différents aux États-Unis en feignant le même symptôme, entendre une voix qui fait « boum » ! Dans les années soixante-dix, les huit personnes furent hospitalisées avec un diagnostic probable de schizophrénie et une prise en charge médicamenteuse associée à des thérapies individuelles et de groupe. La répétition de cette démarche auprès de plusieurs psychiatres a valu récemment à Slater de ressortir de leur bureau avec une pharmacopée impressionnante, essentiellement des anti-psychotiques et des anti-dépresseurs, sans hospitalisation et sans prise en charge psychothérapeutique. Aussi provocatrice et biaisée que soit la démarche, le message est clair. C’est le contexte dans lequel le psychiatre se trouve et la prépondérance de certaines approches thérapeutiques qui influencent le diagnostic : « Il est assez clair pour moi que c’est la médication qui dirige les décisions, et pas le contraire. À l’époque de Rosenhan, c’était le schème psychanalytique qui déterminait ce qui allait mal ; de nos jours, c’est le schème pharmacologique, la pilule » (Slater, 2004). Dans le domaine de la psychiatrie de l’enfant, les controverses entre les psychiatres américains et français sur le trouble déficitaire de l’attention tiennent pour beaucoup dans la facilité de prescription des psychostimulants. Faut-il pour autant en conclure que le trouble n’existe pas et qu’il est un produit social, créé par la disponibilité des médicaments ou au contraire s’appuyer sur un fait établi (les enfants hyperactifs répondent au traitement) pour développer une démarche scientifique visant à lui donner une explication (Robaey, 1992) et à répondre à la souffrance des enfants et des familles ?</p>
+										<p>Si le contexte reste prépondérant dans le diagnostic, c’est parce que nous manquons encore d’explication physiologique complète des maladies mentales. La psychiatrie n’est pas encore une science. Pour qu’elle le devienne pleinement il faut considérer le mental comme faisant partie du corps, explicable en termes mécanistiques et mesurable de façon objective. Il y a actuellement en psychiatrie un manque criant de cadre théorique, de formation et de recherche. Les résultats des recherches en neurosciences ne sont pas bien intégrés dans la pratique psychiatrique. Les positions de psychiatres comme Apollon et collaborateurs créent un immobilisme et une certaine circularité dans lesquels elles sont à la fois la conséquence et la cause de ce manque. L’esprit, comme le corps, a des mécanismes biologiques que les neurosciences ont dévoilé et continueront à dévoiler. Il suffit de voir comment un concept tel que la mémoire trouve des explications à tous les niveaux du biologique, moléculaire, cellulaire, systémique et cérébral et comment il est réintégré dans ses différentes dimensions à la personne humaine (Squire et Kandel, 1999).</p>
+										<p>Ne soyons pas frileux devant l’approche scientifique de l’esprit car elle reste essentiellement une épistémologie du sujet. Descartes a compris ce fait dans son traité de l’homme et son discours de la méthode et ne fut dualiste que par une nécessité liée au contexte de son époque lui permettant à la fois de défendre une vision mécaniste du corps en y soustrayant la conscience. Mais nous ne sommes plus au temps de Descartes, pour comprendre scientifiquement un phénomène lié au vivant, il faut le concevoir comme une machine avec des parties et des mécanismes. Cela n’implique en aucun cas de renoncer à une éthique du sujet et de modifier nos pratiques thérapeutiques en conséquence ou même modifier nos perceptions. L’analyse scientifique d’un phénomène n’implique pas sa négation. La compréhension scientifique d’un phénomène relève du domaine de la connaissance, tandis que le phénomène dans sa totalité relève de notre perception. Il y a une différence majeure entre connaître et percevoir, entre savoir et sentir. Et même dans la démarche psychanalytique, et surtout à ses débuts lorsque les psychanalystes exhibaient leurs patients, le sujet était souvent présenté comme un objet d’étude.</p>
+										<p>Des avancées majeures dans la compréhension de la genèse des troubles mentaux sont réalisées actuellement en neurosciences, en psychologie et en psychologie sociale et dans des études sur le développement de l’enfant et du cerveau. Cependant pour que ces avancées puissent être intégrées à la pratique clinique des psychiatres, il faut une meilleure compréhension des possibilités de la psychiatrie scientifique qui vont bien au delà de la simple prescription. Cette compréhension ne peut se réaliser qu’avec le concours de la volonté de la profession : i: d’élargir la formation théorique des psychiatres dans les disciplines scientifiques connexes, ii: d’ouvrir la pratique en psychiatrie à des approches nouvelles nées de la recherche dans ces disciplines, iii: d’intégrer les spécialistes de ces disciplines dans une nouvelle organisation des soins.</p>
+										<p>Il fut un temps, pas si lointain, où ce que les auteurs appellent la psychiatrie « nord-américaine » ne se fiait qu’à la psychanalyse, jusqu’à l’excès. Pourtant, l’année dernière, la fameuse clinique psychanalytique américaine Menninger a fermé ses portes pour offrir son expertise comme approche complémentaire à des soins intégrés dans un contexte médical plus large [1] qui inclut, entre autres, l’approche biologique décriée par Apollon et collaborateurs. D’ailleurs, en relisant leur texte, on comprend que dans leur clinique, l’aggravation qui suit le premier contact avec le patient psychotique « sollicite la compétence médicale du psychiatre », en clair la prescription de médicaments.</p>
+										<p>L’argument d’Apollon et collaborateurs sur le choix entre la science et la clinique nous montre cependant que le moment de vérité est venu pour la psychiatrie francophone au Québec, ou du moins une partie de cette psychiatrie. Il lui faudra ou apporter une preuve objective que son rejet de l’approche scientifique est justifiée, ou se réformer de l’intérieur sous peine de ne plus pouvoir prétendre être une discipline médicale à part entière. Alors, dans le choix que nous proposent Apollon et collaborateurs, nous choisissons la science car avec la science nous pouvons faire de la clinique, et une clinique respectueuse d’une éthique du sujet. Mais si nous choisissions de faire de la clinique sans science, nous choisirions de ne plus essayer de comprendre, de garder la compréhension des troubles mentaux figée, et ultimement de renoncer à être des soignants. Refuser des alternatives de soins basées sur des connaissances scientifiques certaines, sous prétexte qu’elles sont limitées et réductrices, repose sur une profession de foi et constitue une attitude de retrait fondée sur une pratique en crise. Au point que la position d’Apollon et collaborateurs, en particulier leur division des maladies psychiatriques selon des approches thérapeutiques faisant appel à la médecine, la réadaptation ou la psychanalyse, apparaît paradoxalement comme une réduction idéologique du phénomène mental en fonction d’une organisation sociale des soins.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12">
+						<div class="main-sidebar">
+							<!-- Single Widget -->
+							<div class="single-widget search">
+								<div class="form">
+									<input type="email" placeholder="Search Here...">
+									<a class="button" href="#"><i class="fa fa-search"></i></a>
+								</div>
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget category">
+								<h3 class="title">Blog Categories</h3>
+								<ul class="categor-list">
+									<li><a>Men's Apparel</a></li>
+									<li><a>Women's Apparel</a></li>
+									<li><a>Bags Collection</a></li>
+									<li><a>Accessories</a></li>
+									<li><a>Sun Glasses</a></li>
+								</ul>
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget recent-post">
+								<h3 class="title">Recent post</h3>
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar1.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog2') }}">Dès sa construction.</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>2017</li>
+											<li><i class="fa fa-eye" aria-hidden="true"></i>17</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar2.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog3') }}">Mobiliser l’histoire pour mieux visibiliser les enjeux actuels de la recherche sur le cerveau.</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>2014</li>
+											<li><i class="fa fa-eye" aria-hidden="true"></i>2</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar3.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog4') }}">La psychiatrie : nouveaux défis.</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>Février 2019</li>
+											<li><i class="fa fa-eye" aria-hidden="true"></i>44</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget side-tags">
+								<h3 class="title">Tags</h3>
+								<ul class="tag">
+									<li><a>business</a></li>
+									<li><a>wordpress</a></li>
+									<li><a>html</a></li>
+									<li><a>multipurpose</a></li>
+									<li><a>education</a></li>
+									<li><a>template</a></li>
+									<li><a>Ecommerce</a></li>
+								</ul>
+							</div>
+							<!--/ End Single Widget -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Single News -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Qui sommes-nous</h2>
+								<p>Bienvenue chez Medi Psychiatrie, votre partenaire en santé mentale. Nous offrons des soins de qualité et accessibles pour atteindre un bien-être optimal avec des services spécialisés et un soutien personnalisé.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Liens Rapides</h2><br>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Accueil</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Nos Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Rendez-Vous</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>À Propos</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Politique</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Heures d’ouverture</h2>
+								<p>Voici nos horaires d'ouverture pour nos services de consultation :</p><br>
+								<ul class="time-sidual">
+									<li class="day">Samedi - Jeudi<span>8h00 - 18h00</span></li>
+									<li class="day">Vendredi<span>9h00 - 14h00</span></li>
+									<li class="day">Samedi - Jeudi<span>18h00 - 23h00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Medi Psychiatrie</h2>
+								<p>Votre partenaire de confiance en santé mentale.</p><br><br>
+								<ul class="single-footer">
+									<li><i class="fa fa-phone"></i>  +213 05 55 43 26 16</li>
+									<li><i class="fa fa-envelope"></i>   medi.psychiatre@gmail.com</li>
+									<li><i class="fa fa-map-marker"></i>   Route de Sidi Achour, Annaba, Algérie</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© 2024 Medi Psychiatrie |  Tous droits réservés. <a href="" target="_blank"></a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

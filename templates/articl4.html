@@ -1,0 +1,401 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>MediPsychiatrie - Blog</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+							<!-- Top -->
+							<ul class="top-contact">
+								<li><i class="fa fa-pause"></i><a href="{{ url_for('index') }}">Vous êtes patient</a></li>
+								<li><i class="fa fa-play"></i><a href="{{ url_for('doctor') }}">Vous êtes psychiatre</a></li>
+							</ul>
+							<!-- End Top -->
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li><a href="{{ url_for('index') }}">Accueil</a></li>
+											<li><a href="{{ url_for('doc') }}">Médecins </a></li>
+											<li><a href="{{ url_for('index') }}#service">Services </a></li>
+											<li class="active"><a href="{{ url_for('blog') }}">Blogs</a></li>
+											<li><a href="{{ url_for('contact') }}">Contactez-nous</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									{% if email %}
+										<p style="color: black; margin-left: -20px;">{{ email }}</p>
+									{% else %}
+										<a href="{{ url_for('loginPatient') }}" class="btn">Connexion</a>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>La psychiatrie : nouveaux défis</h2>
+							<ul class="bread-list">
+								<li><a href="{{ url_for('index') }}">Accueil</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">La psychiatrie : nouveaux défis</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+		
+		<!-- Single News -->
+		<section class="news-single section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- News Head -->
+									<div class="news-head">
+										<img src="{{ url_for('static', filename='img/blog1.jpg') }}" alt="#">
+									</div>
+									<!-- News Title -->
+									<h1 class="news-title">La psychiatrie : nouveaux défis</h1>
+									<!-- Meta -->
+									<div class="meta">
+										<div class="meta-left">
+											<span class="author"><a href="#"><img src="{{ url_for('static', filename='img/author1.jpg') }}" alt="#">Philippe Robaey et Sonia Mansour-Robaey</a></span>
+											<span class="date"><i class="fa fa-clock-o"></i>Février 2019</span>
+										</div>
+										<div class="meta-right">
+											<span class="views"><i class="fa fa-eye"></i>44K</span>
+										</div>
+									</div>
+									<!-- News Text -->
+									<div class="news-text">
+										<p>La psychiatrie doit également tenir compte des attentes qui se posent à son égard du côté des systèmes de soins. D’un point de vue de santé publique, les problématiques de santé mentale représentent dans l‘ensemble environ 25% du « burden of disease », et sont donc une préoccupation centrale du système de soins, même si de manière générale, la part des budgets de santé qui y est consacrés est plutôt comprise entre 5 et 10 %. Il existe donc un écart important entre les besoins et les moyens dans le domaine de la santé mentale, mais qui ne signifie pas que la psychiatrie doive être la seule à répondre à ces besoins. Une des manifestations de cet écart est la publication début 2018 d’un « livre noir de la santé mentale », cri d’alarme lancé par une série de médecins généralistes bruxellois, sous l’égide de la FAMGB, dans lesquels ils témoignent de le l’écart important qu’il existe entre les besoins auxquels ils sont confrontés pour des problématiques de santé mentale, qui représentent environ 50% de leurs consultations et un manque de ressources et de soutien, en particulier du côté de la psychiatrie, pour pouvoir y répondre adéquatement. Ce cri d’alarme local, entre tout à fait en résonnance avec le point de vue défendu dans les sphères de l’OMS et de la World Psychiatric Association, où des groupes de réflexion autour de l’avenir de la santé mentale planchent sur les défis qui se posent à la psychiatrie au 21ème siècle, le premier d’entre eux étant de venir soutenir les médecins de première ligne dans les questions que pose la santé mentale. C’est le point de vue qu’a défendu Norman Sartorius au 1er congrès européen de psychiatrie sociale qui s’est tenu en Juin 2018 à Genève dans lequel il soutenait que la psychiatrie en elle-même ne pouvait répondre à l’entièreté des besoins de santé mentale et qu’un des rôles futurs de la psychiatrie serait celui d’un soutien à la médecine de première ligne, ou à d’autre disciplines hors de la médecine, pour répondre à l’ampleur des défis des demandes de prévention et de soins en santé mentale. La manière dont ces disciplines pourraient interagir pour répondre à ce défi reste encore à définir. Cette question est un des éléments de la réforme de la santé mentale entreprise depuis quelques années par le ministère de la Santé et qui porte le nom de réforme « 107 ». Cette dernière pose plusieurs objectifs :</p>
+										<p>Des activités en matière de prévention et de promotion des soins en santé mentale, détection précoce, dépistage et pose d’un diagnostic, qui sous entends un accueil à la demande accessible, l’organisation d’une réponse de proximité, la pose d’un diagnostic dans le but d’apporter une réponse rapide à ces besoins. C’est précisément le point qui a été soulevé par les généralistes bruxellois.</p>
+										<p>Des équipes ambulatoires de traitement intensif, répondant aux problématiques de santé mentale, qu’elles soient aigues (crises aigues) ou chroniques (pathologies psychiatriques chroniques) offrant par ce biais des alternatives aux hospitalisations et particulièrement aux hospitalisations sous contraintes. Cette réforme est actuellement en cours et, peu à peu sur le territoire belge, s’installent ce type d’unités, où les moyens qui étaient jusqu’à présent dédiés aux hospitalisations sont progressivement redirigés vers le financement d’équipes mobiles, de crise ou chronique. Aux cliniques Saint-Luc, une unité mobile de s’est mise en place, en collaboration avec l’hôpital Titeca et qui couvre une partie Est du territoire bruxellois. Des pourparlers existent sur Bruxelles, avec différentes institutions psychiatriques, universitaires ou non et avec le ministère, pour constituer un réseau plus large, qui couvre l’entièreté du territoire bruxellois et permette de répondre aux demandes de soins à domicile, pour des patients qui sont réticents ou incapables de se déplacer dans les lieux de soins. Par ailleurs nos équipes mènent des recherches pour évaluer si effectivement les interventions des équipes mobiles constituent des alternatives crédibles aux hospitalisations et plus particulièrement aux hospitalisations impliquant des soins contraints.</p>
+										<p>L’intensification des soins résidentiels. Le but est d’augmenter l’intensité des soins prodigués aux patients lors de leurs séjours hospitaliers dans le but d’améliorer la qualité des prises en charge. Ceci vient en écho avec le constat d’études internationales comparatives qui décrivent pour la Belgique une durée moyenne d’hospitalisation plus longue que celle observée dans d’autres pays européens, mais par contre une intensité des soins moindre. Cet état de fait est lié à des questions historiques d’installation de structures psychiatriques d’accueil de longue durée sur le territoire belge, avec de grosses différences régionales, et mérite certainement une réflexion de fond pour l’amélioration de la qualité des soins. Ceci est d’ailleurs, aux cliniques Saint-Luc au cœur de notre réflexion sur l’élaboration d’un projet de soins psychiatrique, dans le cadre de la construction de notre Institut de Psychiatrie Intégré (IPI) où nous souhaiterions en particulier mener des recherches sur ce qui est nécessaire et efficace pour répondre aux besoins des patients que nous accueillons dans le cadre des séjours hospitaliers en psychiatrie.</p>
+										<p>Le développement de structures de réhabilitation des patients. Cette dimension doit également se développer, avec nuance, pour répondre aux besoins des patients qui dans le contexte de difficultés de santé mentale, se retrouve à la marge du monde du travail ou dans un isolement social important, sans pour autant vouloir forcer au retour à l’emploi de patients présentant des difficultés trop importantes. Pour répondre à cette attente, nous menons une réflexion dans le contexte du projet de construction de l’IPI pour que les séjours hospitaliers, qui répondent aux situations de décompensation psychiatrique des patients ne soient pas associés à trop de désocialisation et en particulier à des pertes d’emploi et réfléchissons aussi à des structures d’accompagnement des patients souffrant de burn-out, pour prévenir chez eux la désocialisation.</p>
+                                        <p>La dernière dimension concerne le développement de structures de soins adaptées pour des patients présentant une problématique psychiatrique chronique stabilisée, mais conservant cependant des capacités limitées d’insertion sociale. La réduction du nombre de lits hospitaliers actuellement à l’œuvre dans le domaine de la psychiatrie donne lieu à l’émergence d’une population en manque de structures d’accueil adaptées, telles que des habitations protégées, des communautés thérapeutiques ou des maisons de repos et de soins et en parallèle au développement d’habitations « pirates », qui hébergent parfois ces patients dans des conditions où le respect de la personne humaine n’est pas pris en compte.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12">
+						<div class="main-sidebar">
+							<!-- Single Widget -->
+							<div class="single-widget search">
+								<div class="form">
+									<input type="email" placeholder="Search Here...">
+									<a class="button" href="#"><i class="fa fa-search"></i></a>
+								</div>
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget category">
+								<h3 class="title">Blog Categories</h3>
+								<ul class="categor-list">
+									<li><a>Men's Apparel</a></li>
+									<li><a>Women's Apparel</a></li>
+									<li><a>Bags Collection</a></li>
+									<li><a>Accessories</a></li>
+									<li><a>Sun Glasses</a></li>
+								</ul>
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget recent-post">
+								<h3 class="title">Recent post</h3>
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar1.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog') }}">L’avenir de la psychiatrie</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>3 août 2005</li>
+											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>33</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar2.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog2') }}">Dès sa construction.</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>2017</li>
+											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>17</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+								<!-- Single Post -->
+								<div class="single-post">
+									<div class="image">
+										<img src="{{ url_for('static', filename='img/blog-sidebar3.jpg') }}" alt="#">
+									</div>
+									<div class="content">
+										<h5><a href="{{ url_for('blog3') }}">Mobiliser l’histoire pour mieux visibiliser les enjeux actuels de la recherche sur le cerveau.</a></h5>
+										<ul class="comment">
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>2014</li>
+											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>2</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Single Post -->
+							</div>
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<!--/ End Single Widget -->
+							<!-- Single Widget -->
+							<div class="single-widget side-tags">
+								<h3 class="title">Tags</h3>
+								<ul class="tag">
+									<li><a>business</a></li>
+									<li><a>wordpress</a></li>
+									<li><a>html</a></li>
+									<li><a>multipurpose</a></li>
+									<li><a>education</a></li>
+									<li><a>template</a></li>
+									<li><a>Ecommerce</a></li>
+								</ul>
+							</div>
+							<!--/ End Single Widget -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Single News -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Qui sommes-nous</h2>
+								<p>Bienvenue chez Medi Psychiatrie, votre partenaire en santé mentale. Nous offrons des soins de qualité et accessibles pour atteindre un bien-être optimal avec des services spécialisés et un soutien personnalisé.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Liens Rapides</h2><br>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Accueil</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Nos Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Rendez-Vous</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>À Propos</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Politique</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Heures d’ouverture</h2>
+								<p>Voici nos horaires d'ouverture pour nos services de consultation :</p><br>
+								<ul class="time-sidual">
+									<li class="day">Samedi - Jeudi<span>8h00 - 18h00</span></li>
+									<li class="day">Vendredi<span>9h00 - 14h00</span></li>
+									<li class="day">Samedi - Jeudi<span>18h00 - 23h00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Medi Psychiatrie</h2>
+								<p>Votre partenaire de confiance en santé mentale.</p><br><br>
+								<ul class="single-footer">
+									<li><i class="fa fa-phone"></i>  +213 05 55 43 26 16</li>
+									<li><i class="fa fa-envelope"></i>   medi.psychiatre@gmail.com</li>
+									<li><i class="fa fa-map-marker"></i>   Route de Sidi Achour, Annaba, Algérie</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© 2024 Medi Psychiatrie |  Tous droits réservés. <a href="" target="_blank"></a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
