@@ -1,0 +1,121 @@
+/* Basic reset and styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Chat container styles */
+.chat-container {
+  width: 700px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat box styles */
+.chat-box {
+  height: 400px; /* Adjust height as needed */
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.user-message {
+  background-color: #DCF8C6;
+  color: #1A76D1; /* Changed to #1A76D1 */
+}
+
+.bot-message {
+  background-color: #F2F2F2;
+  color: #333;
+}
+
+/* Input and button styles */
+#user-input {
+  width: calc(100% - 110px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+#send-button {
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #1A76D1; /* Changed to #1A76D1 */
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#send-button:hover {
+  background-color: #2C2D3F; /* Changed to #1A76D1 */
+}
+
+/* Show/hide history button styles */
+#show-history-button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#show-history-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* History container styles */
+.history-container {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+.history-day {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.history-message {
+  margin-left: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .chat-container {
+      width: 90%;
+  }
+
+  #user-input {
+      width: calc(100% - 70px);
+  }
+
+  #send-button {
+      width: 70px;
+  }
+}

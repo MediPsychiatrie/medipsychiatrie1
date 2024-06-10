@@ -1,0 +1,76 @@
+.wrapper {
+    background: rgb(245, 243, 243);
+    background-size: cover;
+    background-position: center;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-wrapper {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+    text-align: left;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    border-radius: 25px;
+    -o-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    box-shadow: 0 6px 17px 0 rgba(0,0,0,.15);
+    -o-box-shadow: 0 6px 17px 0 rgba(0,0,0,.15);
+    -ms-box-shadow: 0 6px 17px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 6px 17px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 6px 17px 0 rgba(0,0,0,.15);
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin: 6px 0 50px 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    justify-content:center;
+}
+
+input[type="submit"]:hover{
+    background: #1A76D1;
+    color: #fff;
+}
+
+.form-row-last{
+
+    text-align: center;
+}
+
+.checkbox {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+a{
+    color: #fff;
+}
