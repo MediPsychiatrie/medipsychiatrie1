@@ -12,7 +12,7 @@ cred = credentials.Certificate("static\json\medipsychiatre-d9468-firebase-admins
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 app.secret_key = 'gjsgft678gHRt4KQDgdqjddv17hsdALKnxixs'
 
